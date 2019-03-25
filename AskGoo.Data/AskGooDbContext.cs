@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using AskGoo.Auth.Models;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace AskGoo.Auth.Data
+namespace AskGoo.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class AskGooDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public AskGooDbContext(DbContextOptions<AskGooDbContext> options)
             : base(options)
         {
         }
