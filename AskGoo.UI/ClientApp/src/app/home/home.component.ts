@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
     {
       return null;
     }
-    return this.claims;
+    return this.claims.sub;
   }
 
   ngOnInit() {

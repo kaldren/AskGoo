@@ -56,7 +56,7 @@ namespace AskGoo.Auth
                     PostLogoutRedirectUris = { "http://localhost:5001/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "api1" }
+                    AllowedScopes = { "openid", "profile", "api1" },
                 },
 
                 // SPA client using implicit flow
