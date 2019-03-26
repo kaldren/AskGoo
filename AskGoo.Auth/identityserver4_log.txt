@@ -4044,3 +4044,1093 @@
 2019-03-26 22:52:46.731 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
 2019-03-26 22:52:46.735 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2019-03-26 22:52:46.741 +02:00 [DBG] Start key discovery request
+2019-03-26 22:57:33.033 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 22:57:33.077 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 22:57:33.080 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 22:57:33.083 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 22:57:33.085 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 22:57:33.087 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 22:57:33.258 +02:00 [DBG] Starting grant removal
+2019-03-26 22:59:12.254 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 22:59:12.261 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 22:59:12.265 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 22:59:12.267 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 22:59:12.269 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 22:59:12.272 +02:00 [DBG] Error Url: /home/error
+2019-03-26 22:59:12.276 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 22:59:12.315 +02:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-26 22:59:12.321 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-26 22:59:12.324 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-26 22:59:12.334 +02:00 [DBG] Processing signout request for 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 22:59:12.344 +02:00 [DBG] Start end session request validation
+2019-03-26 22:59:12.353 +02:00 [DBG] Start identity token validation
+2019-03-26 22:59:13.223 +02:00 [DBG] spa found in database: true
+2019-03-26 22:59:13.241 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 22:59:13.248 +02:00 [DBG] Client found: spa / SPA Client
+2019-03-26 22:59:13.366 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-26 22:59:13.375 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-26 22:59:13.383 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-26 22:59:13.390 +02:00 [DBG] Start authorize request
+2019-03-26 22:59:13.402 +02:00 [DBG] User in authorize request: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 22:59:13.410 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 22:59:13.435 +02:00 [DBG] spa found in database: true
+2019-03-26 22:59:13.437 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 22:59:13.524 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 22:59:13.542 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-26 22:59:13.555 +02:00 [DBG] Token validation success
+{"ClientId":"spa","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1553633564,"exp":1553633864,"iss":"https://localhost:5000","aud":"spa","nonce":"CtLvl9X23fIQotXynAQdf8w41xjnnF67jVrwus8p","iat":1553633564,"at_hash":"75tuWUpW98d9vCfVcMowiA","sid":"f9c0d0577e4cdbad19a0169f085eee04","sub":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","auth_time":1553633563,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-26 22:59:13.594 +02:00 [INF] End session request validation success
+{"ClientId":"spa","ClientName":"SPA Client","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","PostLogOutUri":"https://localhost:5003/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3MmVlYjQ5ZTFiZjRlNmUyMjViOTQ2Yjc0ZGNiY2QzIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTM2MzM1NjQsImV4cCI6MTU1MzYzMzg2NCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMCIsImF1ZCI6InNwYSIsIm5vbmNlIjoiQ3RMdmw5WDIzZklRb3RYeW5BUWRmOHc0MXhqbm5GNjdqVnJ3dXM4cCIsImlhdCI6MTU1MzYzMzU2NCwiYXRfaGFzaCI6Ijc1dHVXVXBXOThkOXZDZlZjTW93aUEiLCJzaWQiOiJmOWMwZDA1NzdlNGNkYmFkMTlhMDE2OWYwODVlZWUwNCIsInN1YiI6IjY1MDQ2YTllLTk3NmEtNGIzNi1iZGFlLWVjYmZiZWJlNmFhNiIsImF1dGhfdGltZSI6MTU1MzYzMzU2MywiaWRwIjoibG9jYWwiLCJhbXIiOlsicHdkIl19.6vSwl0uuZo3zClxq9o_uKaIpw55ksrYnQYVPyz4TXZtgJYg3dj5Wevio-Wd9vM0pNjBeHrqDDLTZBz1b3hwSDYpJjSplVIaKGZqz6fVGCYT2oFXE45vg20hseS2YCHHAy2f06djx-VT_yM7LQomMWXmCBGz60nFCqTVw1UT0lHjr4CRyyokp0xdBE3ugN22_rcHf30TBvGTC_8Dib-L5EMWVXtNDz3KzwDHdEA2I8tcU8poS7smN-lrZ5mw-Qw4hzzi1R0FrYvBVn0BAcWPfv8swRzylkC09c5K3ZwKQBS7c5jl4-naDqMZYGSp1uEtG5hfCVlSWa2loQ7Xwf2oK9Q","post_logout_redirect_uri":"https://localhost:5003/index.html"},"$type":"EndSessionRequestValidationLog"}
+2019-03-26 22:59:13.608 +02:00 [DBG] Success validating end session request from spa
+2019-03-26 22:59:13.793 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 22:59:13.811 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 22:59:13.822 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 22:59:13.836 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 22:59:13.842 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"qN3Q5fDZMh0ARJcmNC1921OmkBUwuhyJaeYhepJ1","UiLocales":null,"Nonce":"qN3Q5fDZMh0ARJcmNC1921OmkBUwuhyJaeYhepJ1","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"f9c0d0577e4cdbad19a0169f085eee04","Raw":{"response_type":"id_token token","client_id":"spa","state":"qN3Q5fDZMh0ARJcmNC1921OmkBUwuhyJaeYhepJ1","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"qN3Q5fDZMh0ARJcmNC1921OmkBUwuhyJaeYhepJ1"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 22:59:13.908 +02:00 [DBG] chydkxbiptUk9+jOKHXNqiEJ502/bl2fEWEari2Zx0A= found in database: true
+2019-03-26 22:59:13.919 +02:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-26 22:59:13.932 +02:00 [DBG] Creating Implicit Flow response.
+2019-03-26 22:59:13.946 +02:00 [DBG] Getting claims for access token for client: spa
+2019-03-26 22:59:13.949 +02:00 [DBG] Getting claims for access token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 22:59:13.985 +02:00 [DBG] Getting claims for identity token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6 and client: spa
+2019-03-26 22:59:13.989 +02:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-26 22:59:14.011 +02:00 [INF] {"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","Endpoint":"Authorize","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","Scopes":"openid profile api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****6u6Q","$type":"Token"},{"TokenType":"access_token","TokenValue":"****CPGg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLI5NIVG92N:00000001","TimeStamp":"2019-03-26T20:59:14.0000000Z","ProcessId":15000,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-26 22:59:14.035 +02:00 [INF] Authorize endpoint response
+{"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ClientId":"spa","RedirectUri":"https://localhost:5003/index.html","State":"qN3Q5fDZMh0ARJcmNC1921OmkBUwuhyJaeYhepJ1","Scope":"openid profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-26 22:59:16.630 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 22:59:16.675 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 22:59:16.681 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 22:59:16.685 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 22:59:16.690 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 22:59:16.692 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 22:59:16.702 +02:00 [DBG] Start discovery request
+2019-03-26 22:59:16.836 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 22:59:16.858 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 22:59:16.863 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 22:59:16.867 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 22:59:16.870 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 22:59:16.872 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 22:59:16.874 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 22:59:16.878 +02:00 [DBG] Start key discovery request
+2019-03-26 23:00:01.466 +02:00 [FTL] Application startup exception
+System.InvalidOperationException: No service for type 'IdentityServer4.EntityFramework.DbContexts.PersistedGrantDbContext' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AskGoo.Auth.Startup.InitializeDatabase(IApplicationBuilder app) in C:\Projects\AskGoo\src\AskGoo.Auth\Startup.cs:line 129
+   at AskGoo.Auth.Startup.Configure(IApplicationBuilder app) in C:\Projects\AskGoo\src\AskGoo.Auth\Startup.cs:line 115
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-03-26 23:00:14.287 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:00:14.314 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:00:14.315 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:00:14.317 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:00:14.318 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:00:14.319 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:00:14.413 +02:00 [DBG] Starting grant removal
+2019-03-26 23:00:22.277 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 23:00:22.283 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 23:00:22.285 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 23:00:22.286 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 23:00:22.288 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 23:00:22.290 +02:00 [DBG] Error Url: /home/error
+2019-03-26 23:00:22.293 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 23:00:22.348 +02:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-26 23:00:22.354 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-26 23:00:22.360 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-26 23:00:22.370 +02:00 [DBG] Processing signout request for 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:00:22.377 +02:00 [DBG] Start end session request validation
+2019-03-26 23:00:22.385 +02:00 [DBG] Start identity token validation
+2019-03-26 23:00:23.104 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:23.116 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:23.119 +02:00 [DBG] Client found: spa / SPA Client
+2019-03-26 23:00:23.319 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-26 23:00:23.331 +02:00 [DBG] Token validation success
+{"ClientId":"spa","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1553633953,"exp":1553634253,"iss":"https://localhost:5000","aud":"spa","nonce":"qN3Q5fDZMh0ARJcmNC1921OmkBUwuhyJaeYhepJ1","iat":1553633953,"at_hash":"tfYbEVIA-p6PYrLvHhhidg","sid":"f9c0d0577e4cdbad19a0169f085eee04","sub":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","auth_time":1553633563,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-26 23:00:23.363 +02:00 [INF] End session request validation success
+{"ClientId":"spa","ClientName":"SPA Client","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","PostLogOutUri":"https://localhost:5003/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3MmVlYjQ5ZTFiZjRlNmUyMjViOTQ2Yjc0ZGNiY2QzIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTM2MzM5NTMsImV4cCI6MTU1MzYzNDI1MywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMCIsImF1ZCI6InNwYSIsIm5vbmNlIjoicU4zUTVmRFpNaDBBUkpjbU5DMTkyMU9ta0JVd3VoeUphZVloZXBKMSIsImlhdCI6MTU1MzYzMzk1MywiYXRfaGFzaCI6InRmWWJFVklBLXA2UFlyTHZIaGhpZGciLCJzaWQiOiJmOWMwZDA1NzdlNGNkYmFkMTlhMDE2OWYwODVlZWUwNCIsInN1YiI6IjY1MDQ2YTllLTk3NmEtNGIzNi1iZGFlLWVjYmZiZWJlNmFhNiIsImF1dGhfdGltZSI6MTU1MzYzMzU2MywiaWRwIjoibG9jYWwiLCJhbXIiOlsicHdkIl19.bsPPDXlmKZ_JLPJyFezypY0fE-ds8PLyZbCSWC9NmMOM4HMP7-weuysraKbdLoRs1McS_1rYzA3eCnZbQASPL1cKJE2jeGFeisFYMAz7vPrxcnfptYe755qIC_u2Ys-ugY_WiYUMkOW3kSy62VcFpgKZdcpItUEChV1TQXshBtltkCCCRm2EztSL-PwA3aVITo9Vzxh302kcwnCMvqBEtEB490eT_aUWj0QIKH1Z6n8pR_maoItI-uGmtq5jHdUP6ucXpqfhs34wsYyzTk-KyyOyawWWXv-SPD-fuYrR2O5IOFu6rs_n100-XpXkThm5ltRbzysxpNMpCHLUQK6u6Q","post_logout_redirect_uri":"https://localhost:5003/index.html"},"$type":"EndSessionRequestValidationLog"}
+2019-03-26 23:00:23.373 +02:00 [DBG] Success validating end session request from spa
+2019-03-26 23:00:23.563 +02:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-03-26 23:00:23.568 +02:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-03-26 23:00:23.570 +02:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-03-26 23:00:23.580 +02:00 [INF] {"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLLI5O7R9595:00000002","TimeStamp":"2019-03-26T21:00:23.0000000Z","ProcessId":16552,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-03-26 23:00:23.730 +02:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-26 23:00:23.735 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-26 23:00:23.742 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-26 23:00:23.754 +02:00 [DBG] Processing signout callback request
+2019-03-26 23:00:23.783 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:23.785 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:23.787 +02:00 [DBG] No client front-channel logout URLs
+2019-03-26 23:00:23.788 +02:00 [DBG] No client back-channel logout URLs
+2019-03-26 23:00:23.790 +02:00 [INF] Successful signout callback.
+2019-03-26 23:00:23.792 +02:00 [DBG] No client front-channel iframe urls
+2019-03-26 23:00:23.795 +02:00 [DBG] No client back-channel iframe urls
+2019-03-26 23:00:29.305 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:00:29.352 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:00:29.357 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:00:29.364 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:00:29.369 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:00:29.372 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:00:29.380 +02:00 [DBG] Start discovery request
+2019-03-26 23:00:29.635 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:00:29.657 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:00:29.661 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:00:29.663 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:00:29.664 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:00:29.666 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:00:29.667 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:00:29.671 +02:00 [DBG] Start key discovery request
+2019-03-26 23:00:31.834 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-26 23:00:31.851 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-26 23:00:31.859 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-26 23:00:31.870 +02:00 [DBG] Start authorize request
+2019-03-26 23:00:31.882 +02:00 [DBG] No user present in authorize request
+2019-03-26 23:00:31.889 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:00:31.902 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:31.904 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:31.958 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:32.091 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:32.104 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:32.113 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:32.122 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:00:32.128 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","UiLocales":null,"Nonce":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"id_token token","client_id":"spa","state":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:00:32.152 +02:00 [INF] Showing login: User is not authenticated
+2019-03-26 23:00:32.181 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:00:32.189 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:32.191 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:32.195 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:32.199 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:32.202 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:32.206 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:32.209 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:00:32.217 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:32.219 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:36.958 +02:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-26 23:00:37.001 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:00:37.007 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:37.010 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:37.013 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:37.017 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:37.020 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:37.024 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:37.027 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:00:37.162 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:00:37.165 +02:00 [DBG] Adding idp claim with value: local
+2019-03-26 23:00:37.168 +02:00 [DBG] Adding amr claim with value: pwd
+2019-03-26 23:00:37.169 +02:00 [DBG] Adding auth_time claim with value: 1553634037
+2019-03-26 23:00:37.177 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:00:37.183 +02:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLLI5O7R9598:00000005","TimeStamp":"2019-03-26T21:00:37.0000000Z","ProcessId":16552,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-26 23:00:37.198 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:37.201 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:37.219 +02:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-26 23:00:37.223 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-26 23:00:37.225 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-26 23:00:37.231 +02:00 [DBG] Start authorize callback request
+2019-03-26 23:00:37.236 +02:00 [DBG] User in authorize request: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:00:37.238 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:00:37.246 +02:00 [DBG] spa found in database: true
+2019-03-26 23:00:37.247 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:00:37.250 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:37.254 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:37.258 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:00:37.262 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:00:37.263 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:00:37.266 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","UiLocales":null,"Nonce":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"b8c27c110072c4531aed293b492b33a3","Raw":{"response_type":"id_token token","client_id":"spa","state":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:00:37.317 +02:00 [DBG] chydkxbiptUk9+jOKHXNqiEJ502/bl2fEWEari2Zx0A= found in database: true
+2019-03-26 23:00:37.324 +02:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-26 23:00:37.334 +02:00 [DBG] Creating Implicit Flow response.
+2019-03-26 23:00:37.345 +02:00 [DBG] Getting claims for access token for client: spa
+2019-03-26 23:00:37.348 +02:00 [DBG] Getting claims for access token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:00:37.378 +02:00 [DBG] Getting claims for identity token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6 and client: spa
+2019-03-26 23:00:37.381 +02:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-26 23:00:37.390 +02:00 [INF] {"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","Endpoint":"Authorize","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","Scopes":"openid profile api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****rXcw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****c-hA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLI5O7R9598:00000006","TimeStamp":"2019-03-26T21:00:37.0000000Z","ProcessId":16552,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-26 23:00:37.411 +02:00 [INF] Authorize endpoint response
+{"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ClientId":"spa","RedirectUri":"https://localhost:5003/index.html","State":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","Scope":"openid profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-26 23:00:37.429 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:00:37.431 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:00:39.896 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:00:39.900 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:00:39.903 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:00:39.906 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:00:39.910 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:00:39.912 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:00:39.915 +02:00 [DBG] Start discovery request
+2019-03-26 23:00:39.921 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:00:39.949 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:00:39.957 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:00:39.959 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:00:39.961 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:00:39.963 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:00:39.966 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:00:39.968 +02:00 [DBG] Start key discovery request
+2019-03-26 23:01:20.438 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:01:20.464 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:01:20.466 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:01:20.467 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:01:20.468 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:01:20.470 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:01:20.563 +02:00 [DBG] Starting grant removal
+2019-03-26 23:03:20.418 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:03:20.444 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:03:20.445 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:03:20.446 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:03:20.448 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:03:20.449 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:03:20.559 +02:00 [DBG] Starting grant removal
+2019-03-26 23:04:14.186 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:04:14.212 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:04:14.214 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:04:14.216 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:04:14.217 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:04:14.218 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:04:14.307 +02:00 [DBG] Starting grant removal
+2019-03-26 23:04:22.997 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 23:04:23.003 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 23:04:23.005 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 23:04:23.006 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 23:04:23.007 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 23:04:23.009 +02:00 [DBG] Error Url: /home/error
+2019-03-26 23:04:23.010 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 23:04:23.051 +02:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-26 23:04:23.059 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-26 23:04:23.061 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-26 23:04:23.071 +02:00 [DBG] Processing signout request for 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:04:23.079 +02:00 [DBG] Start end session request validation
+2019-03-26 23:04:23.088 +02:00 [DBG] Start identity token validation
+2019-03-26 23:04:23.884 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:23.895 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:23.897 +02:00 [DBG] Client found: spa / SPA Client
+2019-03-26 23:04:24.144 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-26 23:04:24.159 +02:00 [DBG] Token validation success
+{"ClientId":"spa","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1553634037,"exp":1553634337,"iss":"https://localhost:5000","aud":"spa","nonce":"Azdt8hRstSbg5crc3cJLGsSfiYFPT7RNZmAy1Ugq","iat":1553634037,"at_hash":"bsf--nzwuouVdgC6G0DIjA","sid":"b8c27c110072c4531aed293b492b33a3","sub":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","auth_time":1553634037,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-26 23:04:24.207 +02:00 [INF] End session request validation success
+{"ClientId":"spa","ClientName":"SPA Client","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","PostLogOutUri":"https://localhost:5003/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3MmVlYjQ5ZTFiZjRlNmUyMjViOTQ2Yjc0ZGNiY2QzIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTM2MzQwMzcsImV4cCI6MTU1MzYzNDMzNywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMCIsImF1ZCI6InNwYSIsIm5vbmNlIjoiQXpkdDhoUnN0U2JnNWNyYzNjSkxHc1NmaVlGUFQ3Uk5abUF5MVVncSIsImlhdCI6MTU1MzYzNDAzNywiYXRfaGFzaCI6ImJzZi0tbnp3dW91VmRnQzZHMERJakEiLCJzaWQiOiJiOGMyN2MxMTAwNzJjNDUzMWFlZDI5M2I0OTJiMzNhMyIsInN1YiI6IjY1MDQ2YTllLTk3NmEtNGIzNi1iZGFlLWVjYmZiZWJlNmFhNiIsImF1dGhfdGltZSI6MTU1MzYzNDAzNywiaWRwIjoibG9jYWwiLCJhbXIiOlsicHdkIl19.Vkt_9KRwboeHfupcrmCJwljQayfLOcpK5Esmc5MvdE2pQabHJh1AO3yC4qNBjxwzqo7vOrnElO6T10T7b9JodExqU_EOJaxX18jFkri3XvCzdxE750FBzoClAyZl46KtVsX6gvfXNgxI5id-mfOoLCkC5EOzMh8NBJZf-vTRb8_mva8KCRFf5KJbp_e1rB1YuZ85ZofJCR0ssXbJzgFzdBN1iltBaH8W0wNYyGhQ4nZMq1Eafv1WZo-YqaowirZmTWdwp3fKCpazwZaa3yATAO6Lep1FAONxh5cR0L7exUqeXMH0W9OjTSnwYdyV4vImxB6qUQxLbVZ2rYqk_UrXcw","post_logout_redirect_uri":"https://localhost:5003/index.html"},"$type":"EndSessionRequestValidationLog"}
+2019-03-26 23:04:24.218 +02:00 [DBG] Success validating end session request from spa
+2019-03-26 23:04:24.425 +02:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-03-26 23:04:24.433 +02:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-03-26 23:04:24.436 +02:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-03-26 23:04:24.449 +02:00 [INF] {"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLLI5QFIV9R0:00000002","TimeStamp":"2019-03-26T21:04:24.0000000Z","ProcessId":19412,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-03-26 23:04:24.617 +02:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-26 23:04:24.625 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-26 23:04:24.628 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-26 23:04:24.640 +02:00 [DBG] Processing signout callback request
+2019-03-26 23:04:24.671 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:24.674 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:24.678 +02:00 [DBG] No client front-channel logout URLs
+2019-03-26 23:04:24.680 +02:00 [DBG] No client back-channel logout URLs
+2019-03-26 23:04:24.682 +02:00 [INF] Successful signout callback.
+2019-03-26 23:04:24.687 +02:00 [DBG] No client front-channel iframe urls
+2019-03-26 23:04:24.688 +02:00 [DBG] No client back-channel iframe urls
+2019-03-26 23:04:24.885 +02:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-26 23:04:24.889 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-26 23:04:24.892 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-26 23:04:24.895 +02:00 [DBG] Processing signout callback request
+2019-03-26 23:04:24.902 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:24.906 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:24.909 +02:00 [DBG] No client front-channel logout URLs
+2019-03-26 23:04:24.911 +02:00 [DBG] No client back-channel logout URLs
+2019-03-26 23:04:24.913 +02:00 [INF] Successful signout callback.
+2019-03-26 23:04:24.915 +02:00 [DBG] No client front-channel iframe urls
+2019-03-26 23:04:24.917 +02:00 [DBG] No client back-channel iframe urls
+2019-03-26 23:04:29.059 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:04:29.106 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:04:29.110 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:04:29.114 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:04:29.120 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:04:29.122 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:04:29.130 +02:00 [DBG] Start discovery request
+2019-03-26 23:04:29.385 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:04:29.407 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:04:29.410 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:04:29.412 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:04:29.413 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:04:29.415 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:04:29.416 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:04:29.420 +02:00 [DBG] Start key discovery request
+2019-03-26 23:04:30.635 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-26 23:04:30.643 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-26 23:04:30.651 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-26 23:04:30.660 +02:00 [DBG] Start authorize request
+2019-03-26 23:04:30.665 +02:00 [DBG] No user present in authorize request
+2019-03-26 23:04:30.679 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:04:30.691 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:30.693 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:30.749 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:30.861 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:30.872 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:30.879 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:30.890 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:04:30.894 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","UiLocales":null,"Nonce":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"id_token token","client_id":"spa","state":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:04:30.920 +02:00 [INF] Showing login: User is not authenticated
+2019-03-26 23:04:30.946 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:04:30.954 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:30.955 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:30.958 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:30.962 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:30.966 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:30.973 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:30.974 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:04:30.982 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:30.985 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:35.217 +02:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-26 23:04:35.255 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:04:35.273 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:35.276 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:35.287 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:35.354 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:35.359 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:35.364 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:35.366 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:04:35.521 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:04:35.528 +02:00 [DBG] Adding idp claim with value: local
+2019-03-26 23:04:35.532 +02:00 [DBG] Adding amr claim with value: pwd
+2019-03-26 23:04:35.534 +02:00 [DBG] Adding auth_time claim with value: 1553634275
+2019-03-26 23:04:35.541 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:04:35.549 +02:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLLI5QFIV9R0:00000008","TimeStamp":"2019-03-26T21:04:35.0000000Z","ProcessId":19412,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-26 23:04:35.574 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:35.577 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:35.597 +02:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-26 23:04:35.601 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-26 23:04:35.603 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-26 23:04:35.609 +02:00 [DBG] Start authorize callback request
+2019-03-26 23:04:35.616 +02:00 [DBG] User in authorize request: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:04:35.620 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:04:35.625 +02:00 [DBG] spa found in database: true
+2019-03-26 23:04:35.628 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:04:35.634 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:35.639 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:35.642 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:04:35.648 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:04:35.651 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:04:35.653 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","UiLocales":null,"Nonce":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"90081a557db5b9d892d235fa2e275a01","Raw":{"response_type":"id_token token","client_id":"spa","state":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:04:35.720 +02:00 [DBG] chydkxbiptUk9+jOKHXNqiEJ502/bl2fEWEari2Zx0A= found in database: true
+2019-03-26 23:04:35.729 +02:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-26 23:04:35.740 +02:00 [DBG] Creating Implicit Flow response.
+2019-03-26 23:04:35.756 +02:00 [DBG] Getting claims for access token for client: spa
+2019-03-26 23:04:35.760 +02:00 [DBG] Getting claims for access token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:04:35.795 +02:00 [DBG] Getting claims for identity token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6 and client: spa
+2019-03-26 23:04:35.800 +02:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-26 23:04:35.810 +02:00 [INF] {"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","Endpoint":"Authorize","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","Scopes":"openid profile api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****Vpzg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****y44Q","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLI5QFIV9R0:00000009","TimeStamp":"2019-03-26T21:04:35.0000000Z","ProcessId":19412,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-26 23:04:35.839 +02:00 [INF] Authorize endpoint response
+{"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ClientId":"spa","RedirectUri":"https://localhost:5003/index.html","State":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","Scope":"openid profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-26 23:04:35.857 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:04:35.860 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:04:38.348 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:04:38.353 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:04:38.355 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:04:38.358 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:04:38.362 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:04:38.364 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:04:38.367 +02:00 [DBG] Start discovery request
+2019-03-26 23:04:38.391 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:04:38.422 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:04:38.428 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:04:38.432 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:04:38.434 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:04:38.436 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:04:38.438 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:04:38.441 +02:00 [DBG] Start key discovery request
+2019-03-26 23:05:33.048 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:05:33.086 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:05:33.088 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:05:33.090 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:05:33.093 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:05:33.097 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:05:33.238 +02:00 [DBG] Starting grant removal
+2019-03-26 23:08:05.726 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 23:08:05.736 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 23:08:05.737 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 23:08:05.738 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 23:08:05.740 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 23:08:05.741 +02:00 [DBG] Error Url: /home/error
+2019-03-26 23:08:05.742 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 23:08:05.781 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:08:05.787 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:08:05.790 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:08:05.794 +02:00 [DBG] Start discovery request
+2019-03-26 23:08:06.620 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:08:15.897 +02:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-03-26 23:08:15.908 +02:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-03-26 23:08:15.915 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-03-26 23:08:15.921 +02:00 [WRN] Invalid HTTP request for token endpoint
+2019-03-26 23:08:21.254 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:08:21.311 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:08:21.317 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:08:21.322 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:08:21.326 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:08:21.328 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:08:21.331 +02:00 [DBG] Start discovery request
+2019-03-26 23:08:21.341 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:08:21.357 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:08:21.362 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:08:21.364 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:08:21.366 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:08:21.368 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:08:21.371 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:08:21.377 +02:00 [DBG] Start key discovery request
+2019-03-26 23:08:24.810 +02:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-03-26 23:08:24.819 +02:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-03-26 23:08:24.827 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-03-26 23:08:24.835 +02:00 [DBG] Start userinfo request
+2019-03-26 23:08:24.846 +02:00 [DBG] Bearer token not found
+2019-03-26 23:08:24.847 +02:00 [ERR] No access token found.
+2019-03-26 23:08:34.743 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:08:34.748 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:08:34.753 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:08:34.755 +02:00 [DBG] Start discovery request
+2019-03-26 23:08:34.769 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:09:43.560 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:09:43.601 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:09:43.604 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:09:43.606 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:09:43.609 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:09:43.611 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:09:43.774 +02:00 [DBG] Starting grant removal
+2019-03-26 23:09:49.614 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 23:09:49.621 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 23:09:49.626 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 23:09:49.628 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 23:09:49.630 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 23:09:49.633 +02:00 [DBG] Error Url: /home/error
+2019-03-26 23:09:49.635 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 23:09:49.698 +02:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-26 23:09:49.711 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-26 23:09:49.716 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-26 23:09:49.742 +02:00 [DBG] Processing signout request for 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:09:49.754 +02:00 [DBG] Start end session request validation
+2019-03-26 23:09:49.765 +02:00 [DBG] Start identity token validation
+2019-03-26 23:09:50.771 +02:00 [DBG] spa found in database: true
+2019-03-26 23:09:50.792 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:09:50.797 +02:00 [DBG] Client found: spa / SPA Client
+2019-03-26 23:09:51.059 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-26 23:09:51.072 +02:00 [DBG] Token validation success
+{"ClientId":"spa","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1553634275,"exp":1553634575,"iss":"https://localhost:5000","aud":"spa","nonce":"WgHHiQTD60tRpWW53j9Qksg9XbTFd2w25SJCk3Sq","iat":1553634275,"at_hash":"2NdekeTuBsx4vEn29fsx5w","sid":"90081a557db5b9d892d235fa2e275a01","sub":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","auth_time":1553634275,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-26 23:09:51.109 +02:00 [INF] End session request validation success
+{"ClientId":"spa","ClientName":"SPA Client","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","PostLogOutUri":"https://localhost:5003/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3MmVlYjQ5ZTFiZjRlNmUyMjViOTQ2Yjc0ZGNiY2QzIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTM2MzQyNzUsImV4cCI6MTU1MzYzNDU3NSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMCIsImF1ZCI6InNwYSIsIm5vbmNlIjoiV2dISGlRVEQ2MHRScFdXNTNqOVFrc2c5WGJURmQydzI1U0pDazNTcSIsImlhdCI6MTU1MzYzNDI3NSwiYXRfaGFzaCI6IjJOZGVrZVR1QnN4NHZFbjI5ZnN4NXciLCJzaWQiOiI5MDA4MWE1NTdkYjViOWQ4OTJkMjM1ZmEyZTI3NWEwMSIsInN1YiI6IjY1MDQ2YTllLTk3NmEtNGIzNi1iZGFlLWVjYmZiZWJlNmFhNiIsImF1dGhfdGltZSI6MTU1MzYzNDI3NSwiaWRwIjoibG9jYWwiLCJhbXIiOlsicHdkIl19.URIx6L_Ka3ZFQd2FJCx80u21a6xuXNAFtwAta4O9J6FlC3A-yd9opPO5kbzyHmYG29cx2weCjVfZRvt7Q3__NIIuzG2Kjw3mswk4hYKq9ueOFED2DuNGjOBoRytdVB7yQkFmpM8HFiLQ_KuEZdjJF-LQBDMCYrDHE7BNYyt0_-qlwGswMiwQ3pZ7CwsYqaWtvAlSkqxOj3_E7PPBLTb63wcdyF9y0rqC5UnncXnzinIm4PSY6Bw4_yL6NLzXMQxxaJbPQOs1gSndKKHWQsN5Zvj9ZVxeqQXRB5ZwMuDr4Gbdz-dA7Y0aqTSwnJOm3Ya2iso6Q2GMlYcTRCNDaMVpzg","post_logout_redirect_uri":"https://localhost:5003/index.html"},"$type":"EndSessionRequestValidationLog"}
+2019-03-26 23:09:51.131 +02:00 [DBG] Success validating end session request from spa
+2019-03-26 23:09:51.352 +02:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-03-26 23:09:51.362 +02:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-03-26 23:09:51.364 +02:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-03-26 23:09:51.377 +02:00 [INF] {"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLLI5TGTILE3:00000002","TimeStamp":"2019-03-26T21:09:51.0000000Z","ProcessId":18344,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-03-26 23:09:51.541 +02:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-26 23:09:51.547 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-26 23:09:51.554 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-26 23:09:51.568 +02:00 [DBG] Processing signout callback request
+2019-03-26 23:09:51.600 +02:00 [DBG] spa found in database: true
+2019-03-26 23:09:51.605 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:09:51.612 +02:00 [DBG] No client front-channel logout URLs
+2019-03-26 23:09:51.614 +02:00 [DBG] No client back-channel logout URLs
+2019-03-26 23:09:51.618 +02:00 [INF] Successful signout callback.
+2019-03-26 23:09:51.620 +02:00 [DBG] No client front-channel iframe urls
+2019-03-26 23:09:51.623 +02:00 [DBG] No client back-channel iframe urls
+2019-03-26 23:09:56.281 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:09:56.328 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:09:56.331 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:09:56.339 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:09:56.344 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:09:56.346 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:09:56.356 +02:00 [DBG] Start discovery request
+2019-03-26 23:09:56.617 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:09:56.640 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:09:56.644 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:09:56.646 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:09:56.647 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:09:56.649 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:09:56.650 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:09:56.654 +02:00 [DBG] Start key discovery request
+2019-03-26 23:09:57.526 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-26 23:09:57.533 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-26 23:09:57.540 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-26 23:09:57.550 +02:00 [DBG] Start authorize request
+2019-03-26 23:09:57.559 +02:00 [DBG] No user present in authorize request
+2019-03-26 23:09:57.565 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:09:57.576 +02:00 [DBG] spa found in database: true
+2019-03-26 23:09:57.578 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:09:57.638 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:09:57.746 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:09:57.757 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:09:57.763 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:09:57.772 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:09:57.779 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","UiLocales":null,"Nonce":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"id_token token","client_id":"spa","state":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:09:57.805 +02:00 [INF] Showing login: User is not authenticated
+2019-03-26 23:09:57.834 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:09:57.841 +02:00 [DBG] spa found in database: true
+2019-03-26 23:09:57.843 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:09:57.846 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:09:57.850 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:09:57.855 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:09:57.859 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:09:57.861 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:09:57.868 +02:00 [DBG] spa found in database: true
+2019-03-26 23:09:57.872 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:10:02.709 +02:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-26 23:10:02.744 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:10:02.763 +02:00 [DBG] spa found in database: true
+2019-03-26 23:10:02.767 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:10:02.776 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:10:02.842 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:10:02.846 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:10:02.850 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:10:02.852 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:10:03.002 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:10:03.006 +02:00 [DBG] Adding idp claim with value: local
+2019-03-26 23:10:03.007 +02:00 [DBG] Adding amr claim with value: pwd
+2019-03-26 23:10:03.008 +02:00 [DBG] Adding auth_time claim with value: 1553634603
+2019-03-26 23:10:03.016 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:10:03.022 +02:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLLI5TGTILE6:00000005","TimeStamp":"2019-03-26T21:10:03.0000000Z","ProcessId":18344,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-26 23:10:03.038 +02:00 [DBG] spa found in database: true
+2019-03-26 23:10:03.042 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:10:03.060 +02:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-26 23:10:03.064 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-26 23:10:03.065 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-26 23:10:03.072 +02:00 [DBG] Start authorize callback request
+2019-03-26 23:10:03.079 +02:00 [DBG] User in authorize request: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:10:03.080 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:10:03.086 +02:00 [DBG] spa found in database: true
+2019-03-26 23:10:03.087 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:10:03.090 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:10:03.094 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:10:03.097 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:10:03.103 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:10:03.105 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:10:03.106 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","UiLocales":null,"Nonce":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a269d32016d274f1b9d88fc182b46aee","Raw":{"response_type":"id_token token","client_id":"spa","state":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:10:03.158 +02:00 [DBG] chydkxbiptUk9+jOKHXNqiEJ502/bl2fEWEari2Zx0A= found in database: true
+2019-03-26 23:10:03.165 +02:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-26 23:10:03.175 +02:00 [DBG] Creating Implicit Flow response.
+2019-03-26 23:10:03.185 +02:00 [DBG] Getting claims for access token for client: spa
+2019-03-26 23:10:03.190 +02:00 [DBG] Getting claims for access token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:10:03.224 +02:00 [DBG] Getting claims for identity token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6 and client: spa
+2019-03-26 23:10:03.228 +02:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-26 23:10:03.239 +02:00 [INF] {"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","Endpoint":"Authorize","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","Scopes":"openid profile api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****9VPw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****XjeQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLI5TGTILE6:00000006","TimeStamp":"2019-03-26T21:10:03.0000000Z","ProcessId":18344,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-26 23:10:03.258 +02:00 [INF] Authorize endpoint response
+{"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ClientId":"spa","RedirectUri":"https://localhost:5003/index.html","State":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","Scope":"openid profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-26 23:10:03.278 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:10:03.284 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:10:05.850 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:10:05.857 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:10:05.860 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:10:05.864 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:10:05.870 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:10:05.872 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:10:05.880 +02:00 [DBG] Start discovery request
+2019-03-26 23:10:05.907 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:10:05.937 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:10:05.941 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:10:05.944 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:10:05.947 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:10:05.951 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:10:05.954 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:10:05.957 +02:00 [DBG] Start key discovery request
+2019-03-26 23:11:51.415 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:11:51.445 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:11:51.446 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:11:51.447 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:11:51.449 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:11:51.452 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:11:51.562 +02:00 [DBG] Starting grant removal
+2019-03-26 23:12:12.301 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:12:12.335 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:12:12.337 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:12:12.339 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:12:12.341 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:12:12.343 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:12:12.472 +02:00 [DBG] Starting grant removal
+2019-03-26 23:12:20.759 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 23:12:20.764 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 23:12:20.767 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 23:12:20.770 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 23:12:20.773 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 23:12:20.776 +02:00 [DBG] Error Url: /home/error
+2019-03-26 23:12:20.778 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 23:12:20.809 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:12:20.962 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:12:20.975 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:12:21.015 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:12:21.036 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:12:21.039 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:12:21.045 +02:00 [DBG] Start discovery request
+2019-03-26 23:12:21.708 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:12:21.752 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:12:21.759 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:12:21.762 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:12:21.764 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:12:21.768 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:12:21.770 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:12:21.775 +02:00 [DBG] Start key discovery request
+2019-03-26 23:12:22.359 +02:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-26 23:12:22.364 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-26 23:12:22.368 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-26 23:12:22.381 +02:00 [DBG] Processing signout request for 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:12:22.390 +02:00 [DBG] Start end session request validation
+2019-03-26 23:12:22.401 +02:00 [DBG] Start identity token validation
+2019-03-26 23:12:22.683 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:22.691 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:22.694 +02:00 [DBG] Client found: spa / SPA Client
+2019-03-26 23:12:22.876 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-26 23:12:22.887 +02:00 [DBG] Token validation success
+{"ClientId":"spa","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1553634603,"exp":1553634903,"iss":"https://localhost:5000","aud":"spa","nonce":"ursJO7TIQIlTwhPlYG0UZxdlaWWfILLe0ETiT1N2","iat":1553634603,"at_hash":"nPA6ODr_PAd60wKrtAk9Xw","sid":"a269d32016d274f1b9d88fc182b46aee","sub":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","auth_time":1553634603,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-26 23:12:22.914 +02:00 [INF] End session request validation success
+{"ClientId":"spa","ClientName":"SPA Client","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","PostLogOutUri":"https://localhost:5003/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3MmVlYjQ5ZTFiZjRlNmUyMjViOTQ2Yjc0ZGNiY2QzIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTM2MzQ2MDMsImV4cCI6MTU1MzYzNDkwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMCIsImF1ZCI6InNwYSIsIm5vbmNlIjoidXJzSk83VElRSWxUd2hQbFlHMFVaeGRsYVdXZklMTGUwRVRpVDFOMiIsImlhdCI6MTU1MzYzNDYwMywiYXRfaGFzaCI6Im5QQTZPRHJfUEFkNjB3S3J0QWs5WHciLCJzaWQiOiJhMjY5ZDMyMDE2ZDI3NGYxYjlkODhmYzE4MmI0NmFlZSIsInN1YiI6IjY1MDQ2YTllLTk3NmEtNGIzNi1iZGFlLWVjYmZiZWJlNmFhNiIsImF1dGhfdGltZSI6MTU1MzYzNDYwMywiaWRwIjoibG9jYWwiLCJhbXIiOlsicHdkIl19.tHU1CWg7h-jU3Shavwr5_wc9ejtv6n_DgEfbB7gVdnRo4bWanxpjSZKSlzSeZweiFN2wxu6t1oiYvtsKFgGCFzXBksTApnVqvYxJNZLW6ShSGfvoJkFJIzY9pwaIPMfzExfiPw-h8N06Pt4M--icCjSCEZJEs-5J6pPTCZdWXxI3Wir8i8uP11D8oLu-Xh7XBkGYBoaK6_G_9VPF2IYcfF9q3D33vbyXiU4fdseBpMsoKgnDto2juETo3SX_1sSEeqmRGKy88eoviJQqhSzLqQpNHWLj3Hj_mgKwMSYytHTYb0U61DuuYB3aJnyKF1gcOFDs36gva-c-ImnH-Y9VPw","post_logout_redirect_uri":"https://localhost:5003/index.html"},"$type":"EndSessionRequestValidationLog"}
+2019-03-26 23:12:22.926 +02:00 [DBG] Success validating end session request from spa
+2019-03-26 23:12:23.093 +02:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-03-26 23:12:23.095 +02:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-03-26 23:12:23.097 +02:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-03-26 23:12:23.109 +02:00 [INF] {"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLLI5UT7QN4H:00000002","TimeStamp":"2019-03-26T21:12:23.0000000Z","ProcessId":7076,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-03-26 23:12:23.255 +02:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-26 23:12:23.260 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-26 23:12:23.265 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-26 23:12:23.275 +02:00 [DBG] Processing signout callback request
+2019-03-26 23:12:23.304 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:23.309 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:23.311 +02:00 [DBG] No client front-channel logout URLs
+2019-03-26 23:12:23.314 +02:00 [DBG] No client back-channel logout URLs
+2019-03-26 23:12:23.317 +02:00 [INF] Successful signout callback.
+2019-03-26 23:12:23.319 +02:00 [DBG] No client front-channel iframe urls
+2019-03-26 23:12:23.321 +02:00 [DBG] No client back-channel iframe urls
+2019-03-26 23:12:26.225 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:12:26.231 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:12:26.235 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:12:26.238 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:12:26.243 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:12:26.245 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:12:26.248 +02:00 [DBG] Start discovery request
+2019-03-26 23:12:26.256 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:12:26.288 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:12:26.293 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:12:26.297 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:12:26.301 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:12:26.304 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:12:26.307 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:12:26.310 +02:00 [DBG] Start key discovery request
+2019-03-26 23:12:27.931 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-26 23:12:27.940 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-26 23:12:27.946 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-26 23:12:27.952 +02:00 [DBG] Start authorize request
+2019-03-26 23:12:27.958 +02:00 [DBG] No user present in authorize request
+2019-03-26 23:12:27.967 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:12:27.977 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:27.979 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:28.060 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:28.176 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:28.189 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:28.194 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:28.203 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:12:28.209 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","UiLocales":null,"Nonce":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"id_token token","client_id":"spa","state":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:12:28.233 +02:00 [INF] Showing login: User is not authenticated
+2019-03-26 23:12:28.263 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:12:28.269 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:28.271 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:28.274 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:28.278 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:28.281 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:28.288 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:28.290 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:12:28.297 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:28.302 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:33.349 +02:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-26 23:12:33.385 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:12:33.390 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:33.392 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:33.394 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:33.400 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:33.403 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:33.409 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:33.411 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:12:33.552 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:12:33.556 +02:00 [DBG] Adding idp claim with value: local
+2019-03-26 23:12:33.557 +02:00 [DBG] Adding amr claim with value: pwd
+2019-03-26 23:12:33.558 +02:00 [DBG] Adding auth_time claim with value: 1553634753
+2019-03-26 23:12:33.566 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:12:33.571 +02:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLLI5UT7QN4L:00000005","TimeStamp":"2019-03-26T21:12:33.0000000Z","ProcessId":7076,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-26 23:12:33.589 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:33.591 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:33.611 +02:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-26 23:12:33.614 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-26 23:12:33.616 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-26 23:12:33.622 +02:00 [DBG] Start authorize callback request
+2019-03-26 23:12:33.627 +02:00 [DBG] User in authorize request: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:12:33.628 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:12:33.632 +02:00 [DBG] spa found in database: true
+2019-03-26 23:12:33.635 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:12:33.638 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:33.642 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:33.644 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:12:33.649 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:12:33.651 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:12:33.652 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","UiLocales":null,"Nonce":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"3a1f1d04fdbffd297a464369ef702655","Raw":{"response_type":"id_token token","client_id":"spa","state":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:12:33.704 +02:00 [DBG] chydkxbiptUk9+jOKHXNqiEJ502/bl2fEWEari2Zx0A= found in database: true
+2019-03-26 23:12:33.710 +02:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-26 23:12:33.721 +02:00 [DBG] Creating Implicit Flow response.
+2019-03-26 23:12:33.733 +02:00 [DBG] Getting claims for access token for client: spa
+2019-03-26 23:12:33.735 +02:00 [DBG] Getting claims for access token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:12:33.769 +02:00 [DBG] Getting claims for identity token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6 and client: spa
+2019-03-26 23:12:33.772 +02:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-26 23:12:33.782 +02:00 [INF] {"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","Endpoint":"Authorize","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","Scopes":"openid profile api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****K0GA","$type":"Token"},{"TokenType":"access_token","TokenValue":"****r_RA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLI5UT7QN4L:00000006","TimeStamp":"2019-03-26T21:12:33.0000000Z","ProcessId":7076,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-26 23:12:33.796 +02:00 [INF] Authorize endpoint response
+{"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ClientId":"spa","RedirectUri":"https://localhost:5003/index.html","State":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","Scope":"openid profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-26 23:12:33.818 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:12:33.821 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:12:36.303 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:12:36.306 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:12:36.308 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:12:36.311 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:12:36.316 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:12:36.319 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:12:36.321 +02:00 [DBG] Start discovery request
+2019-03-26 23:12:36.327 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:12:36.355 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:12:36.360 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:12:36.366 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:12:36.369 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:12:36.375 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:12:36.380 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:12:36.385 +02:00 [DBG] Start key discovery request
+2019-03-26 23:18:14.782 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:18:14.821 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:18:14.823 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:18:14.826 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:18:14.829 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:18:14.831 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:18:14.938 +02:00 [DBG] Starting grant removal
+2019-03-26 23:18:26.158 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:18:26.196 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:18:26.199 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:18:26.202 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:18:26.203 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:18:26.205 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:18:26.328 +02:00 [DBG] Starting grant removal
+2019-03-26 23:18:29.954 +02:00 [DBG] TaskCanceledException. Exiting.
+2019-03-26 23:18:29.974 +02:00 [DBG] Stopping grant removal
+2019-03-26 23:18:37.234 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:18:37.269 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:18:37.270 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:18:37.272 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:18:37.275 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:18:37.277 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:18:37.403 +02:00 [DBG] Starting grant removal
+2019-03-26 23:18:37.781 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 23:18:37.786 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 23:18:37.787 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 23:18:37.789 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 23:18:37.791 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 23:18:37.794 +02:00 [DBG] Error Url: /home/error
+2019-03-26 23:18:37.795 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 23:18:37.840 +02:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-26 23:18:37.850 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-26 23:18:37.856 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-26 23:18:37.870 +02:00 [DBG] Processing signout request for 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:18:37.883 +02:00 [DBG] Start end session request validation
+2019-03-26 23:18:37.899 +02:00 [DBG] Start identity token validation
+2019-03-26 23:18:38.795 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:38.809 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:38.814 +02:00 [DBG] Client found: spa / SPA Client
+2019-03-26 23:18:39.103 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-26 23:18:39.132 +02:00 [DBG] Token validation success
+{"ClientId":"spa","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1553634753,"exp":1553635053,"iss":"https://localhost:5000","aud":"spa","nonce":"8cIMMDW7QuYPcqkL1yyRaXod0tD3GhiKpEi5M3Ms","iat":1553634753,"at_hash":"VkzDh_9nM62OIUS0c7VE7Q","sid":"3a1f1d04fdbffd297a464369ef702655","sub":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","auth_time":1553634753,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-26 23:18:39.205 +02:00 [INF] End session request validation success
+{"ClientId":"spa","ClientName":"SPA Client","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","PostLogOutUri":"https://localhost:5003/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3MmVlYjQ5ZTFiZjRlNmUyMjViOTQ2Yjc0ZGNiY2QzIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTM2MzQ3NTMsImV4cCI6MTU1MzYzNTA1MywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMCIsImF1ZCI6InNwYSIsIm5vbmNlIjoiOGNJTU1EVzdRdVlQY3FrTDF5eVJhWG9kMHREM0doaUtwRWk1TTNNcyIsImlhdCI6MTU1MzYzNDc1MywiYXRfaGFzaCI6IlZrekRoXzluTTYyT0lVUzBjN1ZFN1EiLCJzaWQiOiIzYTFmMWQwNGZkYmZmZDI5N2E0NjQzNjllZjcwMjY1NSIsInN1YiI6IjY1MDQ2YTllLTk3NmEtNGIzNi1iZGFlLWVjYmZiZWJlNmFhNiIsImF1dGhfdGltZSI6MTU1MzYzNDc1MywiaWRwIjoibG9jYWwiLCJhbXIiOlsicHdkIl19.rI2-w1wPHSuNZP4vqRSqk1eIttSgbUNbAOdir4cthUAWl71LywXzY0HEJoW1_KN-d4XPqlbX4ijZ9AMO0OuoOkieVnVJnWM-L2kEPZOnFV_m5qrOtSc7A2qH1a3Qp8vapFs6DlPQQowSv9p0tRzZn8eQ2JQL19PUCkXxNuvSwP4UgvPsEuxpLQzNPISK8QYd08bGWGxgxRQ2VkMdYFUW86w_rqsa7okgGJjR68aVHKnKcbfWgIX-VhXiPtDyAXfclp7y97i2S2VFmo1unagoULWosJoBKttbNjI184VFb4kHseEuj-PFhPmAbm1EmF-BVWnsMHge_tp4FGn3UsK0GA","post_logout_redirect_uri":"https://localhost:5003/index.html"},"$type":"EndSessionRequestValidationLog"}
+2019-03-26 23:18:39.222 +02:00 [DBG] Success validating end session request from spa
+2019-03-26 23:18:39.427 +02:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-03-26 23:18:39.433 +02:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-03-26 23:18:39.435 +02:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-03-26 23:18:39.447 +02:00 [INF] {"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLLI62EAHOIP:00000002","TimeStamp":"2019-03-26T21:18:39.0000000Z","ProcessId":13592,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"UserLogoutSuccessEvent"}
+2019-03-26 23:18:39.605 +02:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-26 23:18:39.611 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-26 23:18:39.616 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-26 23:18:39.629 +02:00 [DBG] Processing signout callback request
+2019-03-26 23:18:39.653 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:39.656 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:39.661 +02:00 [DBG] No client front-channel logout URLs
+2019-03-26 23:18:39.665 +02:00 [DBG] No client back-channel logout URLs
+2019-03-26 23:18:39.668 +02:00 [INF] Successful signout callback.
+2019-03-26 23:18:39.670 +02:00 [DBG] No client front-channel iframe urls
+2019-03-26 23:18:39.672 +02:00 [DBG] No client back-channel iframe urls
+2019-03-26 23:18:45.809 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:18:45.856 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:18:45.860 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:18:45.863 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:18:45.868 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:18:45.870 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:18:45.877 +02:00 [DBG] Start discovery request
+2019-03-26 23:18:46.146 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:18:46.170 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:18:46.174 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:18:46.176 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:18:46.177 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:18:46.179 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:18:46.181 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:18:46.185 +02:00 [DBG] Start key discovery request
+2019-03-26 23:18:50.085 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-26 23:18:50.096 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-26 23:18:50.102 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-26 23:18:50.110 +02:00 [DBG] Start authorize request
+2019-03-26 23:18:50.117 +02:00 [DBG] No user present in authorize request
+2019-03-26 23:18:50.126 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:18:50.152 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:50.158 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:50.221 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:50.350 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:50.368 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:50.378 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:50.388 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:18:50.398 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP","UiLocales":null,"Nonce":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"id_token token","client_id":"spa","state":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:18:50.427 +02:00 [INF] Showing login: User is not authenticated
+2019-03-26 23:18:50.459 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:18:50.470 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:50.473 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:50.477 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:50.482 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:50.489 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:50.494 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:50.496 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:18:50.504 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:50.508 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:55.278 +02:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-26 23:18:55.315 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:18:55.321 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:55.323 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:55.325 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:55.330 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:55.332 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:55.340 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:55.342 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:18:55.498 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:18:55.503 +02:00 [DBG] Adding idp claim with value: local
+2019-03-26 23:18:55.506 +02:00 [DBG] Adding amr claim with value: pwd
+2019-03-26 23:18:55.508 +02:00 [DBG] Adding auth_time claim with value: 1553635135
+2019-03-26 23:18:55.516 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:18:55.526 +02:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLLI62EAHOIO:00000009","TimeStamp":"2019-03-26T21:18:55.0000000Z","ProcessId":13592,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-26 23:18:55.545 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:55.550 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:55.570 +02:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-26 23:18:55.576 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-26 23:18:55.578 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-26 23:18:55.584 +02:00 [DBG] Start authorize callback request
+2019-03-26 23:18:55.594 +02:00 [DBG] User in authorize request: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:18:55.597 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:18:55.603 +02:00 [DBG] spa found in database: true
+2019-03-26 23:18:55.607 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:18:55.611 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:55.616 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:55.621 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:18:55.628 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:18:55.631 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:18:55.635 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP","UiLocales":null,"Nonce":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"424fa23a8d29bdf5667d29168dcb699a","Raw":{"response_type":"id_token token","client_id":"spa","state":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"PjjR1tXGfscVJBgeTNG2ZWC5YRohsuaZHiO4UXtP"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:18:55.698 +02:00 [DBG] chydkxbiptUk9+jOKHXNqiEJ502/bl2fEWEari2Zx0A= found in database: true
+2019-03-26 23:18:55.708 +02:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-26 23:18:55.720 +02:00 [DBG] Creating Implicit Flow response.
+2019-03-26 23:18:55.736 +02:00 [DBG] Getting claims for access token for client: spa
+2019-03-26 23:18:55.741 +02:00 [DBG] Getting claims for access token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:18:55.797 +02:00 [INF] {"Details":"System.ArgumentNullException: Value cannot be null.\r\nParameter name: value\r\n   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)\r\n   at System.Security.Claims.Claim..ctor(String type, String value)\r\n   at AskGoo.Auth.ProfileService.GetProfileDataAsync(ProfileDataRequestContext context) in C:\\Projects\\AskGoo\\src\\AskGoo.Auth\\ProfileService.cs:line 35\r\n   at IdentityServer4.Services.DefaultClaimsService.GetAccessTokenClaimsAsync(ClaimsPrincipal subject, Resources resources, ValidatedRequest request) in C:\\local\\identity\\server4\\IdentityServer4\\src\\Services\\Default\\DefaultClaimsService.cs:line 212\r\n   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request) in C:\\local\\identity\\server4\\IdentityServer4\\src\\Services\\Default\\DefaultTokenService.cs:line 159\r\n   at IdentityServer4.ResponseHandling.AuthorizeResponseGenerator.CreateImplicitFlowResponseAsync(ValidatedAuthorizeRequest request, String authorizationCode) in C:\\local\\identity\\server4\\IdentityServer4\\src\\ResponseHandling\\Default\\AuthorizeResponseGenerator.cs:line 154\r\n   at IdentityServer4.ResponseHandling.AuthorizeResponseGenerator.CreateResponseAsync(ValidatedAuthorizeRequest request) in C:\\local\\identity\\server4\\IdentityServer4\\src\\ResponseHandling\\Default\\AuthorizeResponseGenerator.cs:line 81\r\n   at IdentityServer4.Endpoints.AuthorizeEndpointBase.ProcessAuthorizeRequestAsync(NameValueCollection parameters, ClaimsPrincipal user, ConsentResponse consent) in C:\\local\\identity\\server4\\IdentityServer4\\src\\Endpoints\\AuthorizeEndpointBase.cs:line 99\r\n   at IdentityServer4.Endpoints.AuthorizeCallbackEndpoint.ProcessAsync(HttpContext context) in C:\\local\\identity\\server4\\IdentityServer4\\src\\Endpoints\\AuthorizeCallbackEndpoint.cs:line 59\r\n   at IdentityServer4.Endpoints.AuthorizeCallbackEndpoint.ProcessAsync(HttpContext context) in C:\\local\\identity\\server4\\IdentityServer4\\src\\Endpoints\\AuthorizeCallbackEndpoint.cs:line 69\r\n   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\\local\\identity\\server4\\IdentityServer4\\src\\Hosting\\IdentityServerMiddleware.cs:line 54","Category":"Error","Name":"Unhandled Exception","EventType":"Error","Id":3000,"Message":"Value cannot be null.\r\nParameter name: value","ActivityId":"0HLLI62EAHOIO:0000000A","TimeStamp":"2019-03-26T21:18:55.0000000Z","ProcessId":13592,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UnhandledExceptionEvent"}
+2019-03-26 23:18:55.816 +02:00 [FTL] Unhandled exception: Value cannot be null.
+Parameter name: value
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at AskGoo.Auth.ProfileService.GetProfileDataAsync(ProfileDataRequestContext context) in C:\Projects\AskGoo\src\AskGoo.Auth\ProfileService.cs:line 35
+   at IdentityServer4.Services.DefaultClaimsService.GetAccessTokenClaimsAsync(ClaimsPrincipal subject, Resources resources, ValidatedRequest request) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultClaimsService.cs:line 212
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 159
+   at IdentityServer4.ResponseHandling.AuthorizeResponseGenerator.CreateImplicitFlowResponseAsync(ValidatedAuthorizeRequest request, String authorizationCode) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\AuthorizeResponseGenerator.cs:line 154
+   at IdentityServer4.ResponseHandling.AuthorizeResponseGenerator.CreateResponseAsync(ValidatedAuthorizeRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\AuthorizeResponseGenerator.cs:line 81
+   at IdentityServer4.Endpoints.AuthorizeEndpointBase.ProcessAuthorizeRequestAsync(NameValueCollection parameters, ClaimsPrincipal user, ConsentResponse consent) in C:\local\identity\server4\IdentityServer4\src\Endpoints\AuthorizeEndpointBase.cs:line 99
+   at IdentityServer4.Endpoints.AuthorizeCallbackEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\AuthorizeCallbackEndpoint.cs:line 59
+   at IdentityServer4.Endpoints.AuthorizeCallbackEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\AuthorizeCallbackEndpoint.cs:line 69
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-03-26 23:18:55.826 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at AskGoo.Auth.ProfileService.GetProfileDataAsync(ProfileDataRequestContext context) in C:\Projects\AskGoo\src\AskGoo.Auth\ProfileService.cs:line 35
+   at IdentityServer4.Services.DefaultClaimsService.GetAccessTokenClaimsAsync(ClaimsPrincipal subject, Resources resources, ValidatedRequest request) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultClaimsService.cs:line 212
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 159
+   at IdentityServer4.ResponseHandling.AuthorizeResponseGenerator.CreateImplicitFlowResponseAsync(ValidatedAuthorizeRequest request, String authorizationCode) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\AuthorizeResponseGenerator.cs:line 154
+   at IdentityServer4.ResponseHandling.AuthorizeResponseGenerator.CreateResponseAsync(ValidatedAuthorizeRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\AuthorizeResponseGenerator.cs:line 81
+   at IdentityServer4.Endpoints.AuthorizeEndpointBase.ProcessAuthorizeRequestAsync(NameValueCollection parameters, ClaimsPrincipal user, ConsentResponse consent) in C:\local\identity\server4\IdentityServer4\src\Endpoints\AuthorizeEndpointBase.cs:line 99
+   at IdentityServer4.Endpoints.AuthorizeCallbackEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\AuthorizeCallbackEndpoint.cs:line 59
+   at IdentityServer4.Endpoints.AuthorizeCallbackEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\AuthorizeCallbackEndpoint.cs:line 69
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-26 23:19:29.689 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:19:29.723 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:19:29.726 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:19:29.728 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:19:29.729 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:19:29.730 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:19:29.868 +02:00 [DBG] Starting grant removal
+2019-03-26 23:19:30.703 +02:00 [DBG] Login Url: /Account/Login
+2019-03-26 23:19:30.707 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-26 23:19:30.709 +02:00 [DBG] Logout Url: /Account/Logout
+2019-03-26 23:19:30.711 +02:00 [DBG] ConsentUrl Url: /consent
+2019-03-26 23:19:30.713 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-26 23:19:30.716 +02:00 [DBG] Error Url: /home/error
+2019-03-26 23:19:30.718 +02:00 [DBG] Error Id Parameter: errorId
+2019-03-26 23:19:30.961 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:19:31.733 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:31.750 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:31.837 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:32.145 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:32.163 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:32.168 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:32.180 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:19:32.188 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:32.190 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:36.733 +02:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-03-26 23:19:36.735 +02:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-03-26 23:19:36.737 +02:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-03-26 23:19:36.754 +02:00 [INF] {"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLLI62U2NSLB:00000003","TimeStamp":"2019-03-26T21:19:36.0000000Z","ProcessId":7808,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-03-26 23:19:36.847 +02:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-26 23:19:36.867 +02:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-26 23:19:36.871 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-26 23:19:36.885 +02:00 [DBG] Processing signout callback request
+2019-03-26 23:19:36.912 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:36.915 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:36.917 +02:00 [DBG] No client front-channel logout URLs
+2019-03-26 23:19:36.919 +02:00 [DBG] No client back-channel logout URLs
+2019-03-26 23:19:36.922 +02:00 [INF] Successful signout callback.
+2019-03-26 23:19:36.924 +02:00 [DBG] No client front-channel iframe urls
+2019-03-26 23:19:36.925 +02:00 [DBG] No client back-channel iframe urls
+2019-03-26 23:19:39.455 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:19:39.501 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:19:39.505 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:19:39.511 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:19:39.516 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:19:39.518 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:19:39.525 +02:00 [DBG] Start discovery request
+2019-03-26 23:19:39.723 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:19:39.743 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:19:39.746 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:19:39.748 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:19:39.750 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:19:39.752 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:19:39.754 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:19:39.759 +02:00 [DBG] Start key discovery request
+2019-03-26 23:19:42.549 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-26 23:19:42.561 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-26 23:19:42.567 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-26 23:19:42.572 +02:00 [DBG] Start authorize request
+2019-03-26 23:19:42.581 +02:00 [DBG] No user present in authorize request
+2019-03-26 23:19:42.583 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:19:42.589 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:42.591 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:42.598 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:42.602 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:42.606 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:42.612 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:42.614 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:19:42.621 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj","UiLocales":null,"Nonce":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"id_token token","client_id":"spa","state":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:19:42.652 +02:00 [INF] Showing login: User is not authenticated
+2019-03-26 23:19:42.663 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:19:42.670 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:42.672 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:42.676 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:42.680 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:42.683 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:42.687 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:42.690 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:19:42.695 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:42.697 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:47.531 +02:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-26 23:19:47.563 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:19:47.570 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:47.572 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:47.577 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:47.581 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:47.583 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:47.588 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:47.593 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:19:47.863 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:19:47.867 +02:00 [DBG] Adding idp claim with value: local
+2019-03-26 23:19:47.868 +02:00 [DBG] Adding amr claim with value: pwd
+2019-03-26 23:19:47.870 +02:00 [DBG] Adding auth_time claim with value: 1553635187
+2019-03-26 23:19:47.879 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:19:47.885 +02:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","DisplayName":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLLI62U2NSLC:00000006","TimeStamp":"2019-03-26T21:19:47.0000000Z","ProcessId":7808,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-26 23:19:47.912 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:47.917 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:47.951 +02:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-26 23:19:47.954 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-26 23:19:47.956 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-26 23:19:47.963 +02:00 [DBG] Start authorize callback request
+2019-03-26 23:19:47.971 +02:00 [DBG] User in authorize request: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:19:47.976 +02:00 [DBG] Start authorize request protocol validation
+2019-03-26 23:19:47.983 +02:00 [DBG] spa found in database: true
+2019-03-26 23:19:47.985 +02:00 [DBG] client configuration validation for client spa succeeded.
+2019-03-26 23:19:47.988 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:47.994 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:47.998 +02:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-03-26 23:19:48.003 +02:00 [DBG] Found ["api1"] API scopes in database
+2019-03-26 23:19:48.008 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-26 23:19:48.010 +02:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","AllowedRedirectUris":["https://localhost:5003/index.html"],"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile api1","State":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj","UiLocales":null,"Nonce":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"ec38a22e8dc082d35e129055dbddfcdf","Raw":{"response_type":"id_token token","client_id":"spa","state":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj","redirect_uri":"https://localhost:5003/index.html","scope":"openid profile api1","nonce":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-26 23:19:48.084 +02:00 [DBG] chydkxbiptUk9+jOKHXNqiEJ502/bl2fEWEari2Zx0A= found in database: true
+2019-03-26 23:19:48.096 +02:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-26 23:19:48.107 +02:00 [DBG] Creating Implicit Flow response.
+2019-03-26 23:19:48.124 +02:00 [DBG] Getting claims for access token for client: spa
+2019-03-26 23:19:48.129 +02:00 [DBG] Getting claims for access token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6
+2019-03-26 23:19:48.188 +02:00 [DBG] Getting claims for identity token for subject: 65046a9e-976a-4b36-bdae-ecbfbebe6aa6 and client: spa
+2019-03-26 23:19:48.196 +02:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-26 23:19:48.209 +02:00 [INF] {"ClientId":"spa","ClientName":"SPA Client","RedirectUri":"https://localhost:5003/index.html","Endpoint":"Authorize","SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","Scopes":"openid profile api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****T61Q","$type":"Token"},{"TokenType":"access_token","TokenValue":"****GYng","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLI62U2NSLC:00000007","TimeStamp":"2019-03-26T21:19:48.0000000Z","ProcessId":7808,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-26 23:19:48.232 +02:00 [INF] Authorize endpoint response
+{"SubjectId":"65046a9e-976a-4b36-bdae-ecbfbebe6aa6","ClientId":"spa","RedirectUri":"https://localhost:5003/index.html","State":"DsHavTBGByH5Jxl8jDUPX3IpUOlXEof6FwXQe5Pj","Scope":"openid profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-26 23:19:48.254 +02:00 [DBG] Augmenting SignInContext
+2019-03-26 23:19:48.263 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-03-26 23:19:50.791 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-26 23:19:50.796 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:19:50.804 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:19:50.807 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-26 23:19:50.810 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-26 23:19:50.813 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-26 23:19:50.815 +02:00 [DBG] Start discovery request
+2019-03-26 23:19:50.845 +02:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-03-26 23:19:50.871 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-26 23:19:50.878 +02:00 [DBG] Origin https://localhost:5003 is allowed: true
+2019-03-26 23:19:50.882 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-26 23:19:50.886 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-26 23:19:50.891 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-26 23:19:50.893 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-26 23:19:50.896 +02:00 [DBG] Start key discovery request
+2019-03-26 23:20:26.367 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:20:26.397 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:20:26.399 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:20:26.400 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:20:26.403 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:20:26.405 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:20:26.531 +02:00 [DBG] Starting grant removal
+2019-03-26 23:20:44.067 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:20:44.108 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:20:44.110 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:20:44.113 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:20:44.116 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:20:44.119 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:20:44.294 +02:00 [DBG] Starting grant removal
+2019-03-26 23:20:54.045 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-26 23:20:54.073 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-26 23:20:54.074 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-26 23:20:54.076 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-26 23:20:54.077 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-26 23:20:54.079 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-26 23:20:54.194 +02:00 [DBG] Starting grant removal

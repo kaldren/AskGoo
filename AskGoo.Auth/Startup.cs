@@ -50,30 +50,30 @@ namespace AskGoo.Auth
             });
 
             var builder = services.AddIdentityServer(options =>
-            {
-                options.Events.RaiseErrorEvents = true;
-                options.Events.RaiseInformationEvents = true;
-                options.Events.RaiseFailureEvents = true;
-                options.Events.RaiseSuccessEvents = true;
-            })
-            .AddConfigurationStore(options =>
-            {
-                options.ConfigureDbContext = b =>
-                    b.UseSqlServer(connectionString,
-                        sql => sql.MigrationsAssembly(migrationsAssembly));
-            })
-            // this adds the operational data from DB (codes, tokens, consents)
-            .AddOperationalStore(options =>
-            {
-                options.ConfigureDbContext = b =>
-                    b.UseSqlServer(connectionString,
-                        sql => sql.MigrationsAssembly(migrationsAssembly));
+                {
+                    options.Events.RaiseErrorEvents = true;
+                    options.Events.RaiseInformationEvents = true;
+                    options.Events.RaiseFailureEvents = true;
+                    options.Events.RaiseSuccessEvents = true;
+                })
+                .AddConfigurationStore(options =>
+                {
+                    options.ConfigureDbContext = b =>
+                        b.UseSqlServer(connectionString,
+                            sql => sql.MigrationsAssembly(migrationsAssembly));
+                })
+                // this adds the operational data from DB (codes, tokens, consents)
+                .AddOperationalStore(options =>
+                {
+                    options.ConfigureDbContext = b =>
+                        b.UseSqlServer(connectionString,
+                            sql => sql.MigrationsAssembly(migrationsAssembly));
 
-                // this enables automatic token cleanup. this is optional.
-                options.EnableTokenCleanup = true;
-            })
-            .AddProfileService<ProfileService>()
-                .AddAspNetIdentity<ApplicationUser>();
+                    // this enables automatic token cleanup. this is optional.
+                    options.EnableTokenCleanup = true;
+                })
+                .AddAspNetIdentity<ApplicationUser>()
+                .AddProfileService<ProfileService>();
 
             if (Environment.IsDevelopment())
             {
