@@ -4,6 +4,7 @@
 
 using IdentityServer4.Models;
 using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace AskGoo.Auth
 {
@@ -77,7 +78,8 @@ namespace AskGoo.Auth
                     PostLogoutRedirectUris = { "https://localhost:5003/index.html" },
                     AllowedCorsOrigins = { "https://localhost:5003" },
 
-                    AllowedScopes = { "openid", "profile", "api1" }
+                    AllowedScopes = { "openid", "profile", "api1" },
+                    AlwaysIncludeUserClaimsInIdToken = true
                 }
             };
         }
