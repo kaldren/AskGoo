@@ -25,7 +25,14 @@ namespace AskGoo.Auth
         {
             return new ApiResource[]
             {
-                new ApiResource("api1", "My API #1", new[] {JwtClaimTypes.Name})
+                new ApiResource("api1", "My API #1")
+                {
+                    UserClaims = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile
+                    }
+                }
             };
         }
 

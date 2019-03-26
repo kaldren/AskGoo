@@ -56,22 +56,25 @@ namespace AskGoo.Auth
                     options.Events.RaiseFailureEvents = true;
                     options.Events.RaiseSuccessEvents = true;
                 })
-                .AddConfigurationStore(options =>
-                {
-                    options.ConfigureDbContext = b =>
-                        b.UseSqlServer(connectionString,
-                            sql => sql.MigrationsAssembly(migrationsAssembly));
-                })
-                // this adds the operational data from DB (codes, tokens, consents)
-                .AddOperationalStore(options =>
-                {
-                    options.ConfigureDbContext = b =>
-                        b.UseSqlServer(connectionString,
-                            sql => sql.MigrationsAssembly(migrationsAssembly));
+                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryApiResources(Config.GetApis())
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                //.AddConfigurationStore(options =>
+                //{
+                //    options.ConfigureDbContext = b =>
+                //        b.UseSqlServer(connectionString,
+                //            sql => sql.MigrationsAssembly(migrationsAssembly));
+                //})
+                //// this adds the operational data from DB (codes, tokens, consents)
+                //.AddOperationalStore(options =>
+                //{
+                //    options.ConfigureDbContext = b =>
+                //        b.UseSqlServer(connectionString,
+                //            sql => sql.MigrationsAssembly(migrationsAssembly));
 
-                    // this enables automatic token cleanup. this is optional.
-                    options.EnableTokenCleanup = true;
-                })
+                //    // this enables automatic token cleanup. this is optional.
+                //    options.EnableTokenCleanup = true;
+                //})
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddProfileService<ProfileService>();
 
@@ -109,7 +112,7 @@ namespace AskGoo.Auth
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            InitializeDatabase(app);
+            //InitializeDatabase(app);
 
             app.UseCors(cors => { cors.WithOrigins("https://localhost:5003"); });
 
