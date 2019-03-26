@@ -5,6 +5,7 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
 using System.Security.Claims;
+using IdentityModel;
 
 namespace AskGoo.Auth
 {
@@ -23,7 +24,7 @@ namespace AskGoo.Auth
         {
             return new ApiResource[]
             {
-                new ApiResource("api1", "My API #1")
+                new ApiResource("api1", "My API #1", new[] {JwtClaimTypes.Name})
             };
         }
 
@@ -79,7 +80,8 @@ namespace AskGoo.Auth
                     AllowedCorsOrigins = { "https://localhost:5003" },
 
                     AllowedScopes = { "openid", "profile", "api1" },
-                    AlwaysIncludeUserClaimsInIdToken = true
+                    AlwaysIncludeUserClaimsInIdToken = true,
+                    AlwaysSendClientClaims = true
                 }
             };
         }

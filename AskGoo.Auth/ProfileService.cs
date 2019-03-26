@@ -26,7 +26,7 @@ namespace AskGoo.Auth
 
             var claims = new List<Claim>
             {
-                new Claim("FullName", $"{user.FirstName} {user.LastName}"),
+                new Claim("Name", $"{user.FirstName} {user.LastName}"),
             };
 
             context.IssuedClaims.AddRange(claims);
