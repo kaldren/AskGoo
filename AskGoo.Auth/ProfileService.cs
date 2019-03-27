@@ -35,7 +35,7 @@ namespace AskGoo.Auth
             var claims = principal.Claims.ToList();
 
             //Add more claims like this
-            claims.Add(new System.Security.Claims.Claim("MyProfileID", user.Id));
+            //claims.Add(new System.Security.Claims.Claim("MyProfileID", user.Id));
 
             context.IssuedClaims = claims;
         }
