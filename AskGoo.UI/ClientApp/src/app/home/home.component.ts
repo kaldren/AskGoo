@@ -25,6 +25,14 @@ export class HomeComponent implements OnInit {
     console.log(this.claims);
   }
 
+  public showAccessToken() {
+    console.log(this.oauthService.getAccessToken());
+  }
+
+  public showIdentityToken() {
+    console.log(this.oauthService.getIdToken());
+  }
+
   public get name() {
     this.claims = this.oauthService.getIdentityClaims();
     if (!this.claims)

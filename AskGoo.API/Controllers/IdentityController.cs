@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace AskGoo.API.Controllers
 {
-    [Route("identity")]
+    [Route("api/[controller]")]
     [Authorize]
     public class IdentityController : ControllerBase
     {
         public IActionResult Get()
         {
+            return Ok("NICE!");
             return new JsonResult(from c in User.Claims select new { c.Type, c.Value });
         }
     }
