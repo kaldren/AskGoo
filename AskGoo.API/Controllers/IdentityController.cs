@@ -11,10 +11,11 @@ namespace AskGoo.API.Controllers
     [Authorize]
     public class IdentityController : ControllerBase
     {
+        [HttpGet]
         public IActionResult Get()
         {
             return Ok("NICE!");
-            return new JsonResult(from c in User.Claims select new { c.Type, c.Value });
+            //return new JsonResult(from c in User.Claims select new { c.Type, c.Value });
         }
     }
 

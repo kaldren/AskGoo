@@ -21,7 +21,7 @@ import { AuthGuardService } from './_guards/auth-guard.service';
     HttpClientModule,
     OAuthModule.forRoot({
       resourceServer: {
-        allowedUrls: ['https://localhost:6000/api'],
+        allowedUrls: ['https://localhost:5001/api'],
         sendAccessToken: true
       }
     })

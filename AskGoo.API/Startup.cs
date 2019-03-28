@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace AskGoo.API
 {
@@ -29,6 +30,7 @@ namespace AskGoo.API
         {
             services
                 .AddMvcCore()
+                .AddApiExplorer()
                 .AddAuthorization()
                 .AddJsonFormatters()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -46,6 +48,22 @@ namespace AskGoo.API
                         ValidateIssuerSigningKey = true
                     };
                 });
+
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Title = "My API", Version = "v1",
+                    Description = "API Description",
+                    Contact = new Contact
+                    {
+                        Name = "Kaloyan Drenski",
+                        Email = "me@kdrenski.com",
+                        Url = "https://kdrenski.com"
+                    }
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +78,13 @@ namespace AskGoo.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            // Swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
 
             app.UseHttpsRedirection();
             app.UseAuthentication();
