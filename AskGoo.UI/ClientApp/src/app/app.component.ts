@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { authConfig } from './authConfig';
-import { JwksValidationHandler, OAuthService } from 'angular-oauth2-oidc';
+import { AppService } from './services/app.service';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,17 @@ import { JwksValidationHandler, OAuthService } from 'angular-oauth2-oidc';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ClientApp';
+  title = 'pro-dashboard-angular';
 
-  constructor(private oauthService: OAuthService) {
-    this.configureApi();
+  constructor(private appService: AppService) {}
+  getClasses() {
+    const classes = {
+      'pinned-sidebar': this.appService.getSidebarStat().isSidebarPinned,
+      'toggeled-sidebar': this.appService.getSidebarStat().isSidebarToggeled
+    }
+    return classes;
   }
-
-  private configureApi() {
-    this.oauthService.configure(authConfig);
-    this.oauthService.tokenValidationHandler = new JwksValidationHandler();
-    this.oauthService.loadDiscoveryDocumentAndTryLogin();
+  toggleSidebar() {
+    this.appService.toggleSidebar();
   }
 }

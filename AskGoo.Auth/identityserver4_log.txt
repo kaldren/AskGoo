@@ -7719,3 +7719,451 @@ System.InvalidOperationException: No service for type 'IdentityServer4.EntityFra
 2019-03-29 22:15:16.808 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
 2019-03-29 22:15:16.810 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2019-03-29 22:15:16.811 +02:00 [DBG] Start key discovery request
+2019-03-29 22:23:27.073 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:23:27.076 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:23:27.089 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:23:27.091 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:23:27.097 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:23:27.099 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:23:27.107 +02:00 [DBG] Start discovery request
+2019-03-29 22:23:27.132 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:23:27.137 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:23:27.144 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:23:27.146 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:23:27.161 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:23:27.173 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:23:27.186 +02:00 [DBG] Start key discovery request
+2019-03-29 22:25:49.922 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:25:49.924 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:25:49.928 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:25:49.929 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:25:49.932 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:25:49.941 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:25:49.944 +02:00 [DBG] Start discovery request
+2019-03-29 22:25:49.978 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:25:49.982 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:25:49.987 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:25:49.989 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:25:49.993 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:25:49.996 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:25:49.998 +02:00 [DBG] Start key discovery request
+2019-03-29 22:26:08.738 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:26:08.741 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:08.745 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:08.748 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:26:08.751 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:26:08.758 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:26:08.764 +02:00 [DBG] Start discovery request
+2019-03-29 22:26:08.791 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:26:08.796 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:08.799 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:08.801 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:26:08.803 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:26:08.809 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:26:08.811 +02:00 [DBG] Start key discovery request
+2019-03-29 22:26:25.850 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:26:25.853 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:25.857 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:25.859 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:26:25.862 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:26:25.869 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:26:25.872 +02:00 [DBG] Start discovery request
+2019-03-29 22:26:25.899 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:26:25.905 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:25.913 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:25.916 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:26:25.921 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:26:25.923 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:26:25.926 +02:00 [DBG] Start key discovery request
+2019-03-29 22:26:34.238 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:26:34.241 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:34.246 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:34.248 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:26:34.253 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:26:34.257 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:26:34.260 +02:00 [DBG] Start discovery request
+2019-03-29 22:26:34.286 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:26:34.294 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:34.297 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:34.301 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:26:34.304 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:26:34.306 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:26:34.309 +02:00 [DBG] Start key discovery request
+2019-03-29 22:26:38.320 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:26:38.328 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:38.329 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:38.330 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:26:38.333 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:26:38.341 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:26:38.343 +02:00 [DBG] Start discovery request
+2019-03-29 22:26:38.387 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:26:38.392 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:26:38.422 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:26:38.425 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:26:38.440 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:26:38.443 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:26:38.449 +02:00 [DBG] Start key discovery request
+2019-03-29 22:31:46.818 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:31:46.820 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:31:46.825 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:31:46.827 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:31:46.831 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:31:46.836 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:31:46.842 +02:00 [DBG] Start discovery request
+2019-03-29 22:31:46.877 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:31:46.880 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:31:46.884 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:31:46.885 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:31:46.886 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:31:46.888 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:31:46.889 +02:00 [DBG] Start key discovery request
+2019-03-29 22:31:49.329 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:31:49.332 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:31:49.335 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:31:49.337 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:31:49.338 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:31:49.346 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:31:49.348 +02:00 [DBG] Start discovery request
+2019-03-29 22:31:49.372 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:31:49.374 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:31:49.378 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:31:49.381 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:31:49.389 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:31:49.394 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:31:49.397 +02:00 [DBG] Start key discovery request
+2019-03-29 22:33:50.049 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:33:50.052 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:33:50.056 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:33:50.058 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:33:50.060 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:33:50.064 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:33:50.069 +02:00 [DBG] Start discovery request
+2019-03-29 22:33:50.098 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:33:50.103 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:33:50.107 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:33:50.108 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:33:50.114 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:33:50.117 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:33:50.121 +02:00 [DBG] Start key discovery request
+2019-03-29 22:36:17.878 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:36:17.885 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:17.889 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:17.891 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:36:17.893 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:36:17.905 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:36:17.908 +02:00 [DBG] Start discovery request
+2019-03-29 22:36:17.971 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:36:17.974 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:17.978 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:17.979 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:36:17.982 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:36:17.987 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:36:17.990 +02:00 [DBG] Start key discovery request
+2019-03-29 22:36:35.766 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:36:35.768 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:35.773 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:35.774 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:36:35.777 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:36:35.787 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:36:35.789 +02:00 [DBG] Start discovery request
+2019-03-29 22:36:35.826 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:36:35.830 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:35.834 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:35.836 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:36:35.838 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:36:35.844 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:36:35.848 +02:00 [DBG] Start key discovery request
+2019-03-29 22:36:48.825 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:36:48.828 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:48.832 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:48.834 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:36:48.836 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:36:48.844 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:36:48.849 +02:00 [DBG] Start discovery request
+2019-03-29 22:36:48.920 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:36:48.927 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:48.933 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:48.935 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:36:48.943 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:36:48.950 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:36:48.954 +02:00 [DBG] Start key discovery request
+2019-03-29 22:36:51.485 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:36:51.490 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:51.494 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:51.496 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:36:51.498 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:36:51.508 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:36:51.510 +02:00 [DBG] Start discovery request
+2019-03-29 22:36:51.554 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:36:51.563 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:36:51.574 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:36:51.576 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:36:51.579 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:36:51.581 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:36:51.586 +02:00 [DBG] Start key discovery request
+2019-03-29 22:37:06.962 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:37:06.964 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:37:06.971 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:37:06.973 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:37:06.981 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:37:06.986 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:37:06.990 +02:00 [DBG] Start discovery request
+2019-03-29 22:37:07.055 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:37:07.071 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:37:07.079 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:37:07.086 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:37:07.093 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:37:07.096 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:37:07.098 +02:00 [DBG] Start key discovery request
+2019-03-29 22:38:30.030 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:38:30.033 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:38:30.037 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:38:30.039 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:38:30.043 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:38:30.045 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:38:30.052 +02:00 [DBG] Start discovery request
+2019-03-29 22:38:30.117 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:38:30.123 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:38:30.130 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:38:30.137 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:38:30.150 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:38:30.156 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:38:30.158 +02:00 [DBG] Start key discovery request
+2019-03-29 22:38:48.929 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:38:48.932 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:38:48.936 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:38:48.937 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:38:48.940 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:38:48.948 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:38:48.951 +02:00 [DBG] Start discovery request
+2019-03-29 22:38:49.016 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:38:49.021 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:38:49.027 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:38:49.029 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:38:49.034 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:38:49.036 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:38:49.039 +02:00 [DBG] Start key discovery request
+2019-03-29 22:38:59.172 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:38:59.175 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:38:59.182 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:38:59.183 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:38:59.185 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:38:59.192 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:38:59.195 +02:00 [DBG] Start discovery request
+2019-03-29 22:38:59.236 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:38:59.244 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:38:59.250 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:38:59.254 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:38:59.258 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:38:59.261 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:38:59.267 +02:00 [DBG] Start key discovery request
+2019-03-29 22:39:08.966 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:39:08.968 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:39:08.973 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:39:08.974 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:39:08.975 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:39:08.979 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:39:08.983 +02:00 [DBG] Start discovery request
+2019-03-29 22:39:09.027 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:39:09.030 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:39:09.035 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:39:09.038 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:39:09.043 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:39:09.046 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:39:09.049 +02:00 [DBG] Start key discovery request
+2019-03-29 22:40:28.545 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:40:28.548 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:40:28.553 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:40:28.554 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:40:28.556 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:40:28.561 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:40:28.566 +02:00 [DBG] Start discovery request
+2019-03-29 22:40:28.611 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:40:28.616 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:40:28.622 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:40:28.623 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:40:28.628 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:40:28.633 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:40:28.636 +02:00 [DBG] Start key discovery request
+2019-03-29 22:41:59.523 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:41:59.526 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:41:59.531 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:41:59.533 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:41:59.538 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:41:59.542 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:41:59.545 +02:00 [DBG] Start discovery request
+2019-03-29 22:41:59.593 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:41:59.599 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:41:59.603 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:41:59.604 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:41:59.607 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:41:59.608 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:41:59.617 +02:00 [DBG] Start key discovery request
+2019-03-29 22:42:34.734 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:42:34.737 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:42:34.741 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:42:34.742 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:42:34.746 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:42:34.751 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:42:34.754 +02:00 [DBG] Start discovery request
+2019-03-29 22:42:34.799 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:42:34.809 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:42:34.811 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:42:34.814 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:42:34.818 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:42:34.820 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:42:34.823 +02:00 [DBG] Start key discovery request
+2019-03-29 22:43:52.132 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:43:52.135 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:43:52.139 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:43:52.140 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:43:52.143 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:43:52.148 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:43:52.152 +02:00 [DBG] Start discovery request
+2019-03-29 22:43:52.199 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:43:52.211 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:43:52.222 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:43:52.223 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:43:52.226 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:43:52.230 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:43:52.235 +02:00 [DBG] Start key discovery request
+2019-03-29 22:44:15.013 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:44:15.016 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:44:15.021 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:44:15.022 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:44:15.026 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:44:15.032 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:44:15.036 +02:00 [DBG] Start discovery request
+2019-03-29 22:44:15.082 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:44:15.087 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:44:15.091 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:44:15.094 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:44:15.102 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:44:15.105 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:44:15.108 +02:00 [DBG] Start key discovery request
+2019-03-29 22:45:09.871 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:45:09.873 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:45:09.878 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:45:09.879 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:45:09.887 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:45:09.890 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:45:09.892 +02:00 [DBG] Start discovery request
+2019-03-29 22:45:09.961 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:45:09.964 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:45:09.970 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:45:09.971 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:45:09.979 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:45:09.983 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:45:09.992 +02:00 [DBG] Start key discovery request
+2019-03-29 22:45:34.937 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:45:34.940 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:45:34.944 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:45:34.946 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:45:34.948 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:45:34.952 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:45:34.956 +02:00 [DBG] Start discovery request
+2019-03-29 22:45:34.993 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:45:34.997 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:45:35.001 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:45:35.002 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:45:35.004 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:45:35.007 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:45:35.013 +02:00 [DBG] Start key discovery request
+2019-03-29 22:46:58.860 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:46:58.864 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:46:58.870 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:46:58.871 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:46:58.876 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:46:58.883 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:46:58.891 +02:00 [DBG] Start discovery request
+2019-03-29 22:46:58.958 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:46:58.961 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:46:58.967 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:46:58.968 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:46:58.977 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:46:58.981 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:46:58.985 +02:00 [DBG] Start key discovery request
+2019-03-29 22:47:33.494 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:47:33.500 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:47:33.502 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:47:33.504 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:47:33.507 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:47:33.516 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:47:33.520 +02:00 [DBG] Start discovery request
+2019-03-29 22:47:33.594 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:47:33.597 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:47:33.604 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:47:33.607 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:47:33.609 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:47:33.619 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:47:33.621 +02:00 [DBG] Start key discovery request
+2019-03-29 22:47:44.517 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:47:44.520 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:47:44.525 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:47:44.527 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:47:44.532 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:47:44.536 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:47:44.540 +02:00 [DBG] Start discovery request
+2019-03-29 22:47:44.594 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:47:44.600 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:47:44.603 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:47:44.605 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:47:44.610 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:47:44.618 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:47:44.622 +02:00 [DBG] Start key discovery request
+2019-03-29 22:48:04.174 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:48:04.177 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:48:04.180 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:48:04.181 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:48:04.184 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:48:04.193 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:48:04.196 +02:00 [DBG] Start discovery request
+2019-03-29 22:48:04.250 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:48:04.255 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:48:04.262 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:48:04.263 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:48:04.269 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:48:04.273 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:48:04.276 +02:00 [DBG] Start key discovery request
+2019-03-29 22:49:47.106 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:49:47.110 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:49:47.115 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:49:47.117 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:49:47.122 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:49:47.125 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:49:47.128 +02:00 [DBG] Start discovery request
+2019-03-29 22:49:47.168 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:49:47.177 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:49:47.183 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:49:47.187 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:49:47.191 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:49:47.193 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:49:47.195 +02:00 [DBG] Start key discovery request
+2019-03-29 22:50:34.561 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:50:34.564 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:50:34.569 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:50:34.571 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:50:34.576 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:50:34.580 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:50:34.582 +02:00 [DBG] Start discovery request
+2019-03-29 22:50:34.626 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:50:34.631 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:50:34.637 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:50:34.638 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:50:34.643 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:50:34.647 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:50:34.649 +02:00 [DBG] Start key discovery request
+2019-03-29 22:50:44.185 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://localhost:5003
+2019-03-29 22:50:44.187 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:50:44.191 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:50:44.192 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-29 22:50:44.194 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-29 22:50:44.197 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-29 22:50:44.203 +02:00 [DBG] Start discovery request
+2019-03-29 22:50:44.265 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://localhost:5003
+2019-03-29 22:50:44.271 +02:00 [DBG] Client list checked and origin: https://localhost:5003 is allowed
+2019-03-29 22:50:44.276 +02:00 [DBG] CorsPolicyService allowed origin: https://localhost:5003
+2019-03-29 22:50:44.278 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-29 22:50:44.284 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-29 22:50:44.288 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-29 22:50:44.290 +02:00 [DBG] Start key discovery request
