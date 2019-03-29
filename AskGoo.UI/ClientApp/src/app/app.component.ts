@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { authConfig } from '../authConfig';
+import { JwksValidationHandler, OAuthService } from 'angular-oauth2-oidc';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ClientApp';
+
+  constructor(private oauthService: OAuthService) {
+    this.configureApi();
+  }
+
+  private configureApi() {
+    this.oauthService.configure(authConfig);
+    this.oauthService.tokenValidationHandler = new JwksValidationHandler();
+    this.oauthService.loadDiscoveryDocumentAndTryLogin();
+  }
 }
