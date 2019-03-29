@@ -5,15 +5,10 @@ import { OAuthModule } from 'angular-oauth2-oidc';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { SecretComponent } from './secret/secret.component';
-import { AuthGuardService } from './_guards/auth-guard.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    SecretComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +21,7 @@ import { AuthGuardService } from './_guards/auth-guard.service';
       }
     })
   ],
-  providers: [AuthGuardService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

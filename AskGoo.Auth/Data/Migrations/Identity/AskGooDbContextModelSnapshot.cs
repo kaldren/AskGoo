@@ -19,7 +19,7 @@ namespace AskGoo.Auth.Data.Migrations.Identity
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("AskGoo.Data.ApplicationUser", b =>
+            modelBuilder.Entity("AskGoo.Core.Entities.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -194,7 +194,7 @@ namespace AskGoo.Auth.Data.Migrations.Identity
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("AskGoo.Data.ApplicationUser")
+                    b.HasOne("AskGoo.Core.Entities.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -202,7 +202,7 @@ namespace AskGoo.Auth.Data.Migrations.Identity
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("AskGoo.Data.ApplicationUser")
+                    b.HasOne("AskGoo.Core.Entities.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -215,7 +215,7 @@ namespace AskGoo.Auth.Data.Migrations.Identity
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("AskGoo.Data.ApplicationUser")
+                    b.HasOne("AskGoo.Core.Entities.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -223,7 +223,7 @@ namespace AskGoo.Auth.Data.Migrations.Identity
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("AskGoo.Data.ApplicationUser")
+                    b.HasOne("AskGoo.Core.Entities.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

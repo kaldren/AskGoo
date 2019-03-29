@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using AskGoo.Core.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

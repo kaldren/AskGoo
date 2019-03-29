@@ -17,6 +17,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using AskGoo.Data;
+using AskGoo.Core.Entities;
 
 namespace IdentityServer4.Quickstart.UI
 {

@@ -2,6 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using AskGoo.Core.Entities;
 using AskGoo.Data;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;

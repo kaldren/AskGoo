@@ -1,3 +1,4 @@
+using AskGoo.Core.Entities;
 using AskGoo.Data;
 using IdentityModel;
 using IdentityServer4.Events;

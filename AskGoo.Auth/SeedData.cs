@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using AskGoo.Data;
+using AskGoo.Core.Entities;
 
 namespace AskGoo.Auth
 {
