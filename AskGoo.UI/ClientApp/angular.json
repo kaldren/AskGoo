@@ -3,21 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lightning-admin-angular": {
+    "ClientApp": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "style": "scss"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "demo",
+            "outputPath": "dist/ClientApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,9 +27,11 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -61,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lightning-admin-angular:build"
+            "browserTarget": "ClientApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lightning-admin-angular:build:production"
+              "browserTarget": "ClientApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lightning-admin-angular:build"
+            "browserTarget": "ClientApp:build"
           }
         },
         "test": {
@@ -106,7 +108,7 @@
         }
       }
     },
-    "lightning-admin-angular-e2e": {
+    "ClientApp-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lightning-admin-angular:serve"
+            "devServerTarget": "ClientApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "lightning-admin-angular:serve:production"
+              "devServerTarget": "ClientApp:serve:production"
             }
           }
         },
@@ -135,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "lightning-admin-angular"
+  "defaultProject": "ClientApp"
 }
