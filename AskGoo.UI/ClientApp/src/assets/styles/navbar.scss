@@ -1,0 +1,33 @@
+header nav.navbar {
+
+  height: $navbar-height;
+
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+  }
+
+  .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+    height: calc(1.8em + .75rem + 2px);
+  }
+
+  .form-control-dark {
+    color: #000;
+    background-color: #fff;
+  }
+
+  .form-control-dark:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background: #ecf0f1;
+  }
+
+  .search-box {
+    width: unset;
+  }
+}
