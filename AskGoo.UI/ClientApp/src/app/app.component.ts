@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { authConfig } from '../authConfig';
+import { authConfig } from './authConfig';
 import { JwksValidationHandler, OAuthService } from 'angular-oauth2-oidc';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'ClientApp';
