@@ -2,7 +2,6 @@
   position: static;
   width: $sidebar-width;
   height: $sidebar-height;
-  border: 2px solid red;
   transition: left .3s ease;
   left: -260px;
   top: 0;
@@ -11,5 +10,13 @@
 
   .sidebar-menu {
     list-style-type: none;
+
+    li {
+      .active {
+        border-bottom:2px solid red;
+      }
+    }
+
   }
+
 }

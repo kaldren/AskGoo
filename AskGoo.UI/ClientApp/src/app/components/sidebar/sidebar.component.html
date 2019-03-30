@@ -1,6 +1,13 @@
 <aside id="app-sidebar">
   <ul class="sidebar-menu">
-    <li>Messages</li>
-    <li>Settings</li>
+    <li>
+      <a [routerLink]="['/feed']" routerLinkActive="active">Feed</a>
+    </li>
+    <li>
+        <a [routerLink]="['/messages']" routerLinkActive="active">Messages</a>
+    </li>
+    <li>
+        <a [routerLink]="['/settings']" routerLinkActive="active">Settings</a>
+    </li>
   </ul>
 </aside>

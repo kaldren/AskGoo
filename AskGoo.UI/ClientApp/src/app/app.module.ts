@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FeedComponent } from './pages/feed/feed.component';
+import { MessagesComponent } from './pages/messages/messages.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    FeedComponent,
+    MessagesComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
