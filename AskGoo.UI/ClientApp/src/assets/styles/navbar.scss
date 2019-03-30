@@ -3,9 +3,9 @@ header nav.navbar {
   height: $navbar-height;
 
   .navbar-brand {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding: .75rem;
     font-size: 1rem;
+    white-space: unset;
   }
 
   .form-control {
@@ -29,5 +29,9 @@ header nav.navbar {
 
   .search-box {
     width: unset;
+  }
+
+  @media (max-width: 576px) {
+    height: unset;
   }
 }

@@ -1,0 +1,15 @@
+#app-sidebar {
+  position: static;
+  width: $sidebar-width;
+  height: $sidebar-height;
+  border: 2px solid red;
+  transition: left .3s ease;
+  left: -260px;
+  top: 0;
+  z-index: 111;
+  overflow: auto;
+
+  .sidebar-menu {
+    list-style-type: none;
+  }
+}

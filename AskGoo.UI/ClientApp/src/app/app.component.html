@@ -3,15 +3,13 @@
     <app-navbar></app-navbar>
   </header>
 
-  <aside>
+  <main role="main">
     <app-sidebar></app-sidebar>
-  </aside>
-
-  <main id="app-pages" role="main">
-    <router-outlet></router-outlet>
+    <div id="app-pages">
+      <router-outlet></router-outlet>
+    </div>
   </main>
-
-  <footer>
-    <app-footer></app-footer>
+  <footer id="app-footer">
+      <app-footer></app-footer>
   </footer>
 </div>
