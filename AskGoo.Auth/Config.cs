@@ -63,13 +63,14 @@ namespace AskGoo.Auth
                     ClientId = "spa",
                     ClientName = "SPA Client",
                     ClientUri = "https://localhost:5003",
+                    RequireConsent = false,
 
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
 
                     RedirectUris =
                     {
-                        "https://localhost:5003/index.html",
+                        "https://localhost:5003",
                     },
 
                     PostLogoutRedirectUris = { "https://localhost:5003/index.html" },

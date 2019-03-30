@@ -13,6 +13,7 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { AuthGuardService } from './_guards/auth-guard.service';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { HttpClientModule } from '@angular/common/http';
+import { SigninComponent } from './pages/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +23,22 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     FeedComponent,
     MessagesComponent,
-    SettingsComponent
+    SettingsComponent,
+    SigninComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
     HttpClientModule,
-    OAuthModule.forRoot()
+    OAuthModule.forRoot(
+      {
+        resourceServer: {
+          allowedUrls: ['https://localhost:6000/api'],
+          sendAccessToken: true
+        }
+      }
+    )
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]

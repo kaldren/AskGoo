@@ -78,7 +78,6 @@ namespace AskGoo.Auth
                 //})
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddProfileService<ProfileService>();
-
             if (Environment.IsDevelopment())
             {
                 builder.AddDeveloperSigningCredential();

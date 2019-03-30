@@ -11,15 +11,29 @@ import { OAuthService, JwksValidationHandler } from 'angular-oauth2-oidc';
 })
 export class AppComponent {
   title = 'ClientApp';
+  claims: any;
 
   constructor(private oauthService: OAuthService, private router: Router){
     this.configureApi();
-    this.router.navigate(['/feed']);
+    // this.router.navigate(['/feed']);
   }
 
   private configureApi() {
     this.oauthService.configure(authConfig);
     this.oauthService.tokenValidationHandler = new JwksValidationHandler();
-    this.oauthService.loadDiscoveryDocumentAndTryLogin();
+    this.oauthService.loadDiscoveryDocumentAndLogin();
+  }
+
+  public get name() {
+    this.claims = this.oauthService.getIdentityClaims();
+    if (!this.claims)
+    {
+      return null;
+    }
+    return this.claims.name;
+  }
+
+  public signOut() {
+    this.oauthService.logOut();
   }
 }
