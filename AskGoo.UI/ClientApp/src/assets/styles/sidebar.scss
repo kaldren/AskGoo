@@ -2,10 +2,6 @@
   position: static;
   width: $sidebar-width;
   height: $sidebar-height;
-  transition: left .3s ease;
-  left: -260px;
-  top: 0;
-  z-index: 111;
   overflow: auto;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(186,184,186,1);
   -moz-box-shadow: 2px 2px 5px 0px rgba(186,184,186,1);

@@ -7,12 +7,6 @@ import { AuthGuardService } from './_guards/auth-guard.service';
 import { SigninComponent } from './pages/signin/signin.component';
 
 const routes: Routes = [
-  // { path: '', canActivate: [AuthGuardService], children: [
-  //   { path: '', component: FeedComponent },
-  //   { path: 'feed', component: FeedComponent },
-  //   { path: 'messages', component: MessagesComponent },
-  //   { path: 'settings', component: SettingsComponent },
-  // ]},
   { path: '', component: FeedComponent },
   { path: 'feed', component: FeedComponent },
   { path: 'messages', component: MessagesComponent },
