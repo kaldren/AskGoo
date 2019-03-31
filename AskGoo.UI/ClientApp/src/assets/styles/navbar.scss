@@ -5,7 +5,9 @@ header nav.navbar {
   border-bottom: 2px solid #7d7d7d;
 
   .askgoo-logo {
+    position: relative;
     width: $askgoo-logo-width;
+    left: 40px;
   }
 
   .navbar-brand {
@@ -18,7 +20,7 @@ header nav.navbar {
     padding: .75rem 1rem;
     border-width: 0;
     border-radius: 0;
-    height: calc(1.8em + .75rem + 2px);
+    height: calc(2em + .75rem + 2px);
   }
 
   .form-control-dark {

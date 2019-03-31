@@ -9,6 +9,9 @@
   background: #fff;
 
   .user-profile {
+    background: #dedede;
+    padding: 20px 0px;
+    border-bottom: 1px solid #78b7ff;
 
     .profile-photo {
       img {
@@ -49,6 +52,15 @@
           text-align: center;
           display: inline-block;
           margin: 0 12px 0px 0px;
+        }
+
+        .fa-envelope,
+        .fa-tools {
+          width: 24px;
+        }
+
+        .fa-home {
+          left: 18px;
         }
       }
 
