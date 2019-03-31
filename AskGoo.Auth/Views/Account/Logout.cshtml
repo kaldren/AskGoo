@@ -1,18 +1,18 @@
 ﻿@model LogoutViewModel
 
-<div class="logout-page">
+<div class="signout-page">
     <div class="page-header">
-        <h1>Logout</h1>
+        <h1>Are you sure you want to leave?</h1>
     </div>
 
     <div class="row">
-        <div class="col-sm-6">
-            <p>Would you like to logout of IdentityServer?</p>
+        <div class="col-xs-12">
             <form asp-action="Logout">
-                <input type="hidden" name="logoutId" value="@Model.LogoutId"  />
+                <input type="hidden" name="logoutId" value="@Model.LogoutId" />
                 <fieldset>
                     <div class="form-group">
-                        <button class="btn btn-primary">Yes</button>
+                        <button class="btn btn-signout">Yup, I am!</button>
+                        <a class="btn-goback" href="https://localhost:5003">No, please go back.</a>
                     </div>
                 </fieldset>
             </form>

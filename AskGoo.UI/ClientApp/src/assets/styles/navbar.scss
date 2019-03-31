@@ -2,6 +2,11 @@ header nav.navbar {
 
   height: $navbar-height;
   background: $primary-color;
+  border-bottom: 2px solid #7d7d7d;
+
+  .askgoo-logo {
+    width: $askgoo-logo-width;
+  }
 
   .navbar-brand {
     padding: .75rem;

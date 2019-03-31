@@ -1,18 +1,29 @@
 ﻿body {
-  margin-top: 65px;
+    margin-top: 65px;
+}
+.navbar {
+    background: #f2476a;
+    color: #fff;
+    height: 60px;
+    border-bottom: 2px solid #7d7d7d;
 }
 .navbar-header {
-  position: relative;
-  top: -4px;
+    position: relative;
+    top: -4px;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    margin-top: 10px;
 }
 .navbar-brand > .icon-banner {
-  position: relative;
-  top: -2px;
-  display: inline;
+    position: relative;
+    top: -2px;
+    display: inline;
 }
+.navbar-inverse .navbar-nav > li > a {color: #fff;}
 .icon {
-  position: relative;
-  top: -10px;
+    position: relative;
+    top: -10px;
 }
 .logged-out iframe {
   display: none;
@@ -79,4 +90,57 @@
 }
 .grants .grant li:last-child:after {
   content: '';
+}
+
+/* Signout Page*/
+.signout-page {
+    background: #78b7ff;
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 17px -6px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 10px 17px -6px rgba(0,0,0,0.53);
+    box-shadow: 0px 10px 17px -6px rgba(0,0,0,0.53);
+}
+.btn-signout {
+    background: #f2476a;
+    border: unset;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.22);
+    height: 45px;
+    font-size: 1.2em;
+}
+.btn-signout:hover {
+    background: #f2476a;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.55);
+    color: #fff;
+}
+
+.signout-page .btn-goback {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0 20px;
+    border-bottom: 2px solid #f2476a;
+    font-weight: bold;
+    padding: 0px 0px 5px;
+}
+.signout-page .btn-goback:hover {
+    text-decoration: none;
+    color: #212121;
+}
+.signout-page .btn-goback:focus {
+    text-decoration: none;
+    outline: none;
+}
+.signout-page .page-header {border-bottom: 0px;}
+
+/*Signed out page*/
+.signed-out {}
+.signed-out h1 {
+    text-align: center;
 }
