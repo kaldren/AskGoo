@@ -1,5 +1,10 @@
 <aside id="app-sidebar">
-  <p class="text-center">{{userClaims.name}}</p>
+  <div class="user-profile">
+    <div class="profile-photo">
+      <img src="../../../assets/svg/user.svg" alt="user" />
+    </div>
+      <p class="profile-name">{{userClaims.name}}</p>
+  </div>
   <ul class="sidebar-menu">
 
     <a [routerLink]="['/feed']" routerLinkActive="active">
