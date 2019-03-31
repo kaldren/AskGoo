@@ -5,7 +5,7 @@ export const authConfig: AuthConfig = {
   issuer: 'https://localhost:5000',
 
   // URL of the SPA to redirect the user to after login
-  redirectUri: 'https://localhost:5003',
+  redirectUri: 'https://localhost:5003/index.html',
 
   // SPA's Client Id
   clientId: 'spa',

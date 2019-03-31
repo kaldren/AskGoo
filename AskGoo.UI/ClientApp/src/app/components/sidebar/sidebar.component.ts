@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { OAuthService } from 'angular-oauth2-oidc';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,22 +7,9 @@ import { OAuthService } from 'angular-oauth2-oidc';
 })
 export class SidebarComponent implements OnInit {
 
-  userClaims: any;
+  @Input() userClaims: any;
 
-  constructor(private oauthService: OAuthService){
-    this.claims();
-  }
+  constructor() { }
 
-  ngOnInit() {
-  }
-
-  private claims() {
-    this.userClaims = this.oauthService.getIdentityClaims();
-    if (!this.userClaims)
-    {
-      return null;
-    }
-    return this.userClaims;
-  }
-
+  ngOnInit() { }
 }

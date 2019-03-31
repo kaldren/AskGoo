@@ -70,7 +70,7 @@ namespace AskGoo.Auth
 
                     RedirectUris =
                     {
-                        "https://localhost:5003",
+                        "https://localhost:5003/index.html",
                     },
 
                     PostLogoutRedirectUris = { "https://localhost:5003/index.html" },

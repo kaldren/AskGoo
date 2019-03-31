@@ -4,8 +4,7 @@
   </header>
 
   <main role="main">
-    <app-sidebar></app-sidebar>
-
+    <app-sidebar [userClaims]="userClaims"></app-sidebar>
     <div id="app-pages">
       <router-outlet></router-outlet>
       <footer id="app-footer">
