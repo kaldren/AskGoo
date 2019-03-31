@@ -1,10 +1,32 @@
 ﻿body {
     margin-top: 65px;
 }
+
+/*#region Bootstrap Resets*/
+.btn {
+    width: 100px;
+    height: 40px;
+    font-size: 1.2em;
+    -webkit-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.42);
+    box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.42);
+}
+.btn-primary {
+    background-color: #f2476a;
+    border: none;
+}
+.btn-primary:hover {
+    background: #2196F3;
+}
+.form-control {
+    background: #eee;
+}
+/*#endregion*/
+
 .navbar {
     background: #f2476a;
     color: #fff;
-    height: 60px;
+    height: 70px;
     border-bottom: 2px solid #7d7d7d;
 }
 .navbar-header {
@@ -21,6 +43,12 @@
     display: inline;
 }
 .navbar-inverse .navbar-nav > li > a {color: #fff;}
+.askgoo-logo {
+    width: 92px;
+    display: block;
+    position: relative;
+    top: -17px;
+}
 .icon {
     position: relative;
     top: -10px;
@@ -92,7 +120,25 @@
   content: '';
 }
 
-/* Signout Page*/
+/*#region Sign In Page*/
+.signin-page {
+    margin-top: 50px;
+}
+.signin-page .form-signin .form-control {
+    height: 45px;
+}
+.signin-page .panel-default {
+    -webkit-box-shadow: 0px 6px 5px -3px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 6px 5px -3px rgba(0,0,0,0.35);
+    box-shadow: 0px 6px 5px -3px rgba(0,0,0,0.35);
+}
+.signin-page .panel-heading {
+    background: #2196F3;
+    color: #fff;
+}
+/*#endregion*/
+
+/*#region Sign out Page*/
 .signout-page {
     background: #78b7ff;
     text-align: center;
@@ -139,8 +185,11 @@
 }
 .signout-page .page-header {border-bottom: 0px;}
 
-/*Signed out page*/
+/*#endregion*/
+
+/*#region Signed out page*/
 .signed-out {}
 .signed-out h1 {
     text-align: center;
 }
+/*#endregion*/
