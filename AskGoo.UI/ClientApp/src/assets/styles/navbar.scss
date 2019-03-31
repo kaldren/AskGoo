@@ -16,6 +16,15 @@ header nav.navbar {
     white-space: unset;
   }
 
+  .nav-link svg {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .nav-link-signout svg:hover {
+    color: $secondary-color;
+  }
+
   .form-control {
     padding: .75rem 1rem;
     border-width: 0;
