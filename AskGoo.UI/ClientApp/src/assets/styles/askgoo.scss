@@ -6,7 +6,7 @@
 @import "./footer.scss";
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -17,5 +17,5 @@ body {
 
 #app-container {
   height: 100%;
-  background: #c4dbf6;
+  background: $app-container-color;
 }
