@@ -18,6 +18,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using AskGoo.Data;
 using AskGoo.Core.Entities;
+using AskGoo.Auth.Quickstart.Account;
+using System.Security.Claims;
 
 namespace IdentityServer4.Quickstart.UI
 {
@@ -203,6 +205,63 @@ namespace IdentityServer4.Quickstart.UI
             return View("LoggedOut", vm);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Signup()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Signup(SignupInputModel model)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return Redirect(model.ReturnUrl);
+            }
+
+            var userExists = await _userManager.FindByEmailAsync(model.Email);
+
+            if (userExists != null)
+            {
+                return Redirect(model.ReturnUrl);
+            }
+
+            var appUser = new ApplicationUser
+            {
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                Email = model.Email,
+                UserName = model.Email
+            };
+
+            var result = _userManager.CreateAsync(appUser, model.Password).Result;
+
+            if (!result.Succeeded)
+            {
+                throw new Exception(result.Errors.First().Description);
+            }
+
+            result = _userManager.AddClaimsAsync(appUser, new Claim[]{
+                        new Claim(JwtClaimTypes.Name, $"{appUser.FirstName} {appUser.LastName}"),
+                        new Claim(JwtClaimTypes.GivenName, appUser.FirstName),
+                        new Claim(JwtClaimTypes.FamilyName, appUser.LastName),
+                        new Claim(JwtClaimTypes.Email, appUser.Email),
+                        new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
+                        new Claim(JwtClaimTypes.WebSite, string.Empty),
+                        new Claim(JwtClaimTypes.Address, string.Empty)
+                    }).Result;
+
+            if (!result.Succeeded)
+            {
+                throw new Exception(result.Errors.First().Description);
+            }
+            else
+            {
+                Console.WriteLine($"User with email {appUser.Email} created");
+            }
+
+            var vm = BuildSignupViewModelAsync(model);
+            return View(vm);
+        }
 
 
         /*****************************************/
@@ -328,6 +387,21 @@ namespace IdentityServer4.Quickstart.UI
             }
 
             return vm;
+        }
+
+        private async Task<SignupViewModel> BuildSignupViewModelAsync(SignupInputModel model)
+        {
+            var vm = await BuildSignupViewModelAsync(model.ReturnUrl);
+
+            return vm;
+        }
+
+        private async Task<SignupViewModel> BuildSignupViewModelAsync(string returnUrl)
+        {
+            return new SignupViewModel
+            {
+                ReturnUrl = "~/Account/Signup",
+            };
         }
     }
 }

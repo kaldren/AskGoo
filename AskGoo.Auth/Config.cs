@@ -45,6 +45,7 @@ namespace AskGoo.Auth
                 {
                     ClientId = "mvc",
                     ClientName = "MVC Client",
+                    RequireConsent = false,
 
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     ClientSecrets = { new Secret("7A0C81F5-617A-D0B2-1BF9-46FEBAFC613D".Sha256()) },
@@ -82,8 +83,8 @@ namespace AskGoo.Auth
                         IdentityServerConstants.StandardScopes.Profile,
                         "api1"
                     },
-                    AlwaysIncludeUserClaimsInIdToken = true,
-                    AlwaysSendClientClaims = true
+                    //AlwaysIncludeUserClaimsInIdToken = true,
+                    //AlwaysSendClientClaims = true
                 }
             };
         }
