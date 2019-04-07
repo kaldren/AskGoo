@@ -4,14 +4,16 @@ using AskGoo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AskGoo.Data.Migrations.Identity
 {
     [DbContext(typeof(AskGooDbContext))]
-    partial class AskGooDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190406200144_AddedMessages")]
+    partial class AddedMessages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

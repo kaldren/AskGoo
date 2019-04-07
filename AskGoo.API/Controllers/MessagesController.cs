@@ -10,10 +10,11 @@ namespace AskGoo.API.Controllers
     /// <summary>
     /// Messages API
     /// </summary>
+
+    [Route("api/[controller]")]
+    [ApiController]
     public class MessagesController : ControllerBase
     {
-        public MessagesController()
-        {
-        }
+
     }
 }
