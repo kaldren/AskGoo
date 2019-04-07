@@ -32,14 +32,22 @@ namespace AskGoo.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetConversationById([FromRoute] Guid id)
         {
-            var message = await _context.Conversations.FirstOrDefaultAsync(x => x.Id == id);
+            var conversation = await _context.Conversations.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (message == null)
+            if (conversation == null)
             {
                 return NotFound();
             }
 
-            return Ok(message);
+            var conversationDto = new ConversationDto()
+            {
+                Id = conversation.Id,
+                Author = await _context.Users.Where(x => x.Id == conversation.AuthorId).Select(x => x.UserName).FirstOrDefaultAsync(),
+                Content = conversation.Content,
+                DateCreated = conversation.CreatedDate
+            };
+
+            return Ok(conversationDto);
         }
 
         [HttpGet]

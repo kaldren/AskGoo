@@ -19,4 +19,12 @@ export class ConversationsService {
     return this.http.get(this.baseApiUrl + '/conversations', {headers: headers});
   }
 
+  getConversationById(id: string) {
+    var accessToken = this.authService.getAccessToken();
+
+    var headers = new HttpHeaders().set('Authorization', 'Bearer ' + accessToken);
+
+    return this.http.get(this.baseApiUrl + '/conversations/' + id, {headers: headers});
+  }
+
 }
