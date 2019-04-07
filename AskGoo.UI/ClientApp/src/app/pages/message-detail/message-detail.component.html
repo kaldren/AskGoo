@@ -1,6 +1,25 @@
-<p>
-  {{conversation?.author}}
-</p>
-<p>
-  {{conversation?.content}}
-</p>
+
+<div class="message-detail">
+<div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">{{conversation?.author}} <span class="created-date">( {{conversation?.createdDate}} )</span></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        {{conversation?.content}}
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Reply</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

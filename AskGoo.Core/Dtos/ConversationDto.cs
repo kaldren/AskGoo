@@ -9,6 +9,6 @@ namespace AskGoo.Core.Dtos
         public Guid Id { get; set; }
         public string Content { get; set; }
         public string Author { get; set; }
-        public DateTime DateCreated { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }

@@ -44,7 +44,7 @@ namespace AskGoo.API.Controllers
                 Id = conversation.Id,
                 Author = await _context.Users.Where(x => x.Id == conversation.AuthorId).Select(x => x.UserName).FirstOrDefaultAsync(),
                 Content = conversation.Content,
-                DateCreated = conversation.CreatedDate
+                CreatedDate = conversation.CreatedDate
             };
 
             return Ok(conversationDto);
@@ -68,7 +68,7 @@ namespace AskGoo.API.Controllers
                     Id = conversation.Id,
                     Author = await _context.Users.Where(x => x.Id == conversation.AuthorId).Select(x => x.UserName).FirstOrDefaultAsync(),
                     Content = conversation.Content,
-                    DateCreated = conversation.CreatedDate
+                    CreatedDate = conversation.CreatedDate
                 });
             }
 
