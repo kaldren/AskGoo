@@ -20,17 +20,8 @@ namespace AskGoo.Data
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
-
-            modelBuilder.Entity<MessageUser>()
-                .HasKey(bc => new { bc.AuthorId, bc.RecipientId });
-            modelBuilder.Entity<MessageUser>()
-                .HasOne(bc => bc.Author)
-                .WithMany(b => b.MessageUsers)
-                .HasForeignKey(bc => bc.AuthorId);
-            modelBuilder.Entity<MessageUser>()
-                .HasOne(bc => bc.Recipient)
-                .WithMany(c => c.MessageUsers)
-                .HasForeignKey(bc => bc.RecipientId);
         }
+
+        public DbSet<Conversation> Conversations { get; set; }
     }
 }

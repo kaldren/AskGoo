@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AskGoo.Data.Migrations.Identity
 {
     [DbContext(typeof(AskGooDbContext))]
-    [Migration("20190406200144_AddedMessages")]
-    partial class AddedMessages
+    [Migration("20190407081118_Conversations")]
+    partial class Conversations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -76,34 +76,22 @@ namespace AskGoo.Data.Migrations.Identity
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("AskGoo.Core.Entities.Message", b =>
+            modelBuilder.Entity("AskGoo.Core.Entities.Conversation", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("AuthorId");
 
                     b.Property<string>("Content");
 
+                    b.Property<DateTime>("CreatedDate");
+
+                    b.Property<string>("RecipientId");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("AuthorId");
-
-                    b.ToTable("Message");
-                });
-
-            modelBuilder.Entity("AskGoo.Core.Entities.MessageUser", b =>
-                {
-                    b.Property<string>("AuthorId");
-
-                    b.Property<int>("RecipientId");
-
-                    b.HasKey("AuthorId", "RecipientId");
-
-                    b.HasIndex("RecipientId");
-
-                    b.ToTable("MessageUser");
+                    b.ToTable("Conversations");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -214,26 +202,6 @@ namespace AskGoo.Data.Migrations.Identity
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("AskGoo.Core.Entities.Message", b =>
-                {
-                    b.HasOne("AskGoo.Core.Entities.ApplicationUser", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId");
-                });
-
-            modelBuilder.Entity("AskGoo.Core.Entities.MessageUser", b =>
-                {
-                    b.HasOne("AskGoo.Core.Entities.ApplicationUser", "Author")
-                        .WithMany("MessageUsers")
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("AskGoo.Core.Entities.Message", "Recipient")
-                        .WithMany("MessageUsers")
-                        .HasForeignKey("RecipientId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

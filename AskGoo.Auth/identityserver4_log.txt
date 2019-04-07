@@ -2384,3 +2384,312 @@
 2019-04-07 08:49:21.232 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
 2019-04-07 08:49:21.246 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2019-04-07 08:49:21.254 +03:00 [DBG] Start key discovery request
+2019-04-07 09:10:25.557 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:10:25.594 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:10:25.599 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:10:25.604 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:10:25.611 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:10:25.617 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:10:25.774 +03:00 [DBG] Starting grant removal
+2019-04-07 09:11:00.031 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:11:00.066 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:11:00.074 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:11:00.078 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:11:00.084 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:11:00.096 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:11:00.263 +03:00 [DBG] Starting grant removal
+2019-04-07 09:12:17.480 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:12:17.518 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:12:17.524 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:12:17.528 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:12:17.535 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:12:17.540 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:12:17.698 +03:00 [DBG] Starting grant removal
+2019-04-07 09:12:36.779 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:12:36.819 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:12:36.824 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:12:36.827 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:12:36.837 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:12:36.843 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:12:37.062 +03:00 [DBG] Starting grant removal
+2019-04-07 09:12:45.191 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:12:45.240 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:12:45.247 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:12:45.249 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:12:45.257 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:12:45.263 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:12:45.458 +03:00 [DBG] Starting grant removal
+2019-04-07 09:14:41.904 +03:00 [DBG] Login Url: /Account/Login
+2019-04-07 09:14:41.906 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-04-07 09:14:41.910 +03:00 [DBG] Logout Url: /Account/Logout
+2019-04-07 09:14:41.911 +03:00 [DBG] ConsentUrl Url: /consent
+2019-04-07 09:14:41.916 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-04-07 09:14:41.918 +03:00 [DBG] Error Url: /home/error
+2019-04-07 09:14:41.924 +03:00 [DBG] Error Id Parameter: errorId
+2019-04-07 09:14:41.961 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 09:14:41.982 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 09:14:41.986 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 09:14:42.002 +03:00 [DBG] Start discovery request
+2019-04-07 09:14:45.084 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 09:14:45.253 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 09:14:45.264 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 09:14:45.269 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 09:14:45.301 +03:00 [DBG] Start key discovery request
+2019-04-07 09:15:13.906 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:15:13.952 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:15:13.957 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:15:13.959 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:15:13.962 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:15:13.967 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:15:14.146 +03:00 [DBG] Starting grant removal
+2019-04-07 09:15:19.243 +03:00 [DBG] Login Url: /Account/Login
+2019-04-07 09:15:19.248 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-04-07 09:15:19.252 +03:00 [DBG] Logout Url: /Account/Logout
+2019-04-07 09:15:19.255 +03:00 [DBG] ConsentUrl Url: /consent
+2019-04-07 09:15:19.258 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-04-07 09:15:19.261 +03:00 [DBG] Error Url: /home/error
+2019-04-07 09:15:19.266 +03:00 [DBG] Error Id Parameter: errorId
+2019-04-07 09:15:19.320 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 09:15:19.347 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 09:15:19.350 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 09:15:19.359 +03:00 [DBG] Start discovery request
+2019-04-07 09:15:22.616 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 09:15:22.783 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 09:15:22.788 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 09:15:22.792 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 09:15:22.806 +03:00 [DBG] Start key discovery request
+2019-04-07 09:20:33.950 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:20:33.991 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:20:33.996 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:20:33.998 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:20:34.006 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:20:34.011 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:20:34.184 +03:00 [DBG] Starting grant removal
+2019-04-07 09:21:35.565 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 09:21:35.601 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 09:21:35.607 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 09:21:35.609 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 09:21:35.615 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 09:21:35.623 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 09:21:35.773 +03:00 [DBG] Starting grant removal
+2019-04-07 09:22:49.577 +03:00 [DBG] TaskCanceledException. Exiting.
+2019-04-07 09:22:49.614 +03:00 [DBG] Stopping grant removal
+2019-04-07 09:49:45.851 +03:00 [WRN] Navigations 'MessageUser.Recipient' and 'Message.MessageUsers' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.
+2019-04-07 10:29:11.071 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 10:29:11.103 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 10:29:11.107 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 10:29:11.108 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 10:29:11.111 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 10:29:11.112 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 10:29:11.334 +03:00 [DBG] Starting grant removal
+2019-04-07 10:29:32.400 +03:00 [DBG] TaskCanceledException. Exiting.
+2019-04-07 10:29:32.430 +03:00 [DBG] Stopping grant removal
+2019-04-07 10:40:26.159 +03:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Messages] DROP CONSTRAINT [FK_Messages_AspNetUsers_AuthorId];
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the object "Messages" because it does not exist or you do not have permissions.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:117eec25-229a-47bb-8add-8142921fd123
+Error Number:4902,State:1,Class:16
+2019-04-07 10:40:42.126 +03:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Messages] DROP CONSTRAINT [FK_Messages_AspNetUsers_AuthorId];
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the object "Messages" because it does not exist or you do not have permissions.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:9dfa727f-af90-45c6-8bc2-bbc576d96450
+Error Number:4902,State:1,Class:16
+2019-04-07 11:16:42.015 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 11:16:42.040 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 11:16:42.044 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 11:16:42.045 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 11:16:42.047 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 11:16:42.049 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 11:16:42.154 +03:00 [DBG] Starting grant removal
+2019-04-07 11:16:44.913 +03:00 [DBG] Login Url: /Account/Login
+2019-04-07 11:16:44.914 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-04-07 11:16:44.916 +03:00 [DBG] Logout Url: /Account/Logout
+2019-04-07 11:16:44.919 +03:00 [DBG] ConsentUrl Url: /consent
+2019-04-07 11:16:44.920 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-04-07 11:16:44.920 +03:00 [DBG] Error Url: /home/error
+2019-04-07 11:16:44.921 +03:00 [DBG] Error Id Parameter: errorId
+2019-04-07 11:16:44.949 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 11:16:44.967 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 11:16:44.969 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 11:16:44.980 +03:00 [DBG] Start discovery request
+2019-04-07 11:16:46.418 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 11:16:46.510 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 11:16:46.513 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 11:16:46.516 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 11:16:46.521 +03:00 [DBG] Start key discovery request
+2019-04-07 11:18:09.884 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 11:18:09.887 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 11:18:09.891 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 11:18:09.893 +03:00 [DBG] Start discovery request
+2019-04-07 11:18:09.907 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 11:18:10.004 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 11:18:10.006 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 11:18:10.010 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 11:18:10.011 +03:00 [DBG] Start key discovery request
+2019-04-07 11:19:03.617 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 11:19:03.620 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 11:19:03.623 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 11:19:03.625 +03:00 [DBG] Start discovery request
+2019-04-07 11:19:03.631 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 11:19:03.705 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 11:19:03.707 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 11:19:03.710 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 11:19:03.712 +03:00 [DBG] Start key discovery request
+2019-04-07 11:21:58.068 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 11:21:58.070 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 11:21:58.077 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 11:21:58.078 +03:00 [DBG] Start discovery request
+2019-04-07 11:21:58.085 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 11:21:58.158 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 11:21:58.160 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 11:21:58.165 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 11:21:58.167 +03:00 [DBG] Start key discovery request
+2019-04-07 11:22:49.899 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 11:22:49.901 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 11:22:49.905 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 11:22:49.907 +03:00 [DBG] Start discovery request
+2019-04-07 11:22:49.914 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 11:22:49.987 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 11:22:49.989 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 11:22:49.992 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 11:22:49.994 +03:00 [DBG] Start key discovery request
+2019-04-07 11:23:10.925 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 11:23:10.928 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 11:23:10.933 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 11:23:10.934 +03:00 [DBG] Start discovery request
+2019-04-07 11:23:10.939 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 11:23:11.010 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 11:23:11.013 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 11:23:11.018 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 11:23:11.019 +03:00 [DBG] Start key discovery request
+2019-04-07 12:27:28.201 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:27:28.205 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:27:28.210 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:27:28.212 +03:00 [DBG] Start discovery request
+2019-04-07 12:27:28.220 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:27:28.296 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:27:28.300 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:27:28.304 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:27:28.305 +03:00 [DBG] Start key discovery request
+2019-04-07 12:27:53.332 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:27:53.334 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:27:53.339 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:27:53.340 +03:00 [DBG] Start discovery request
+2019-04-07 12:27:53.346 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:27:53.419 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:27:53.422 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:27:53.425 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:27:53.427 +03:00 [DBG] Start key discovery request
+2019-04-07 12:28:09.322 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:28:09.324 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:28:09.328 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:28:09.330 +03:00 [DBG] Start discovery request
+2019-04-07 12:28:09.337 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:28:09.403 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:28:09.406 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:28:09.409 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:28:09.412 +03:00 [DBG] Start key discovery request
+2019-04-07 12:28:18.730 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:28:18.735 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:28:18.739 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:28:18.742 +03:00 [DBG] Start discovery request
+2019-04-07 12:28:18.748 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:28:18.829 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:28:18.835 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:28:18.838 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:28:18.839 +03:00 [DBG] Start key discovery request
+2019-04-07 12:29:42.642 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:29:42.645 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:29:42.651 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:29:42.652 +03:00 [DBG] Start discovery request
+2019-04-07 12:29:42.656 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:29:42.733 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:29:42.736 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:29:42.741 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:29:42.742 +03:00 [DBG] Start key discovery request
+2019-04-07 12:31:33.812 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:31:33.815 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:31:33.819 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:31:33.822 +03:00 [DBG] Start discovery request
+2019-04-07 12:31:33.827 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:31:33.904 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:31:33.908 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:31:33.912 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:31:33.914 +03:00 [DBG] Start key discovery request
+2019-04-07 12:31:51.381 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:31:51.384 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:31:51.388 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:31:51.389 +03:00 [DBG] Start discovery request
+2019-04-07 12:31:51.394 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:31:51.466 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:31:51.469 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:31:51.475 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:31:51.477 +03:00 [DBG] Start key discovery request
+2019-04-07 12:32:19.336 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:32:19.339 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:32:19.342 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:32:19.345 +03:00 [DBG] Start discovery request
+2019-04-07 12:32:19.351 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:32:19.425 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:32:19.428 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:32:19.431 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:32:19.434 +03:00 [DBG] Start key discovery request
+2019-04-07 12:34:11.618 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:34:11.620 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:34:11.622 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:34:11.626 +03:00 [DBG] Start discovery request
+2019-04-07 12:34:11.631 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:34:11.708 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:34:11.710 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:34:11.714 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:34:11.716 +03:00 [DBG] Start key discovery request
+2019-04-07 12:34:30.276 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:34:30.281 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:34:30.285 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:34:30.287 +03:00 [DBG] Start discovery request
+2019-04-07 12:34:30.293 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:34:30.379 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:34:30.381 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:34:30.386 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:34:30.388 +03:00 [DBG] Start key discovery request
+2019-04-07 12:34:57.112 +03:00 [DBG] TaskCanceledException. Exiting.
+2019-04-07 12:34:57.152 +03:00 [DBG] Stopping grant removal
+2019-04-07 12:35:01.559 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-07 12:35:01.588 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-07 12:35:01.593 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-07 12:35:01.594 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-07 12:35:01.598 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-07 12:35:01.604 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-07 12:35:01.717 +03:00 [DBG] Starting grant removal
+2019-04-07 12:36:06.129 +03:00 [DBG] Login Url: /Account/Login
+2019-04-07 12:36:06.130 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-04-07 12:36:06.132 +03:00 [DBG] Logout Url: /Account/Logout
+2019-04-07 12:36:06.136 +03:00 [DBG] ConsentUrl Url: /consent
+2019-04-07 12:36:06.137 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-04-07 12:36:06.138 +03:00 [DBG] Error Url: /home/error
+2019-04-07 12:36:06.139 +03:00 [DBG] Error Id Parameter: errorId
+2019-04-07 12:36:06.168 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-07 12:36:06.183 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-07 12:36:06.186 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-07 12:36:06.192 +03:00 [DBG] Start discovery request
+2019-04-07 12:36:07.933 +03:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-04-07 12:36:08.038 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-07 12:36:08.042 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-07 12:36:08.045 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-07 12:36:08.050 +03:00 [DBG] Start key discovery request
