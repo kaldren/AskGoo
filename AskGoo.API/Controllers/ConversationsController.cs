@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using AskGoo.Core.Dtos;
 using AskGoo.Core.Entities;
 using AskGoo.Data;
 using Microsoft.AspNetCore.Authorization;
@@ -17,7 +19,7 @@ namespace AskGoo.API.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    [AllowAnonymous]
+    [Authorize]
     public class ConversationsController : ControllerBase
     {
         private readonly AskGooDbContext _context;
@@ -43,11 +45,26 @@ namespace AskGoo.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllConversations()
         {
-            var messagesList = await _context.Conversations
-                .Where(x => x.RecipientId == "176b888d-652c-4219-8b04-dae855ee08b5")
+            var loggedInUserId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            var conversationList = await _context.Conversations
+                .Where(x => x.RecipientId == loggedInUserId)
                 .ToListAsync();
 
-            return Ok(messagesList);
+            var conversationDto = new List<ConversationDto>();
+
+            foreach (var conversation in conversationList)
+            {
+                conversationDto.Add(new ConversationDto
+                {
+                    Id = conversation.Id,
+                    Author = await _context.Users.Where(x => x.Id == conversation.AuthorId).Select(x => x.UserName).FirstOrDefaultAsync(),
+                    Content = conversation.Content,
+                    DateCreated = conversation.CreatedDate
+                });
+            }
+
+            return Ok(conversationDto);
         }
 
         [HttpPost]

@@ -16,4 +16,8 @@ export class AuthService {
     }
     return false;
   }
+
+  public getAccessToken() {
+    return this.oauthService.getAccessToken();
+  }
 }

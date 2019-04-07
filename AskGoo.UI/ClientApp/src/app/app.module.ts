@@ -15,6 +15,7 @@ import { AuthGuardService } from './_guards/auth-guard.service';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './pages/signin/signin.component';
+import { MessageDetailComponent } from './pages/message-detail/message-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SigninComponent } from './pages/signin/signin.component';
     MessagesComponent,
     SettingsComponent,
     SigninComponent,
+    MessageDetailComponent,
   ],
   imports: [
     BrowserModule,
