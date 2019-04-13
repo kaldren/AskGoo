@@ -87,18 +87,7 @@ namespace AskGoo.API.Controllers
         [ProducesDefaultResponseType]
         public async Task<IActionResult> CreateNewMessage([FromBody] CreateConversationDto dto)
         {
-            //var msg = new ConversationDto
-            //{
-            //    AuthorId = "1a633c66-9418-4147-905c-caed4ddb5082",
-            //    Content = "Hello, bro!",
-            //    RecipientId = "176b888d-652c-4219-8b04-dae855ee08b5"
-            //};
             var loggedInUserId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-
-            //var loggedInUserId = await _context.UserClaims
-            //                                .Where(x => x.ClaimType == "email" && x.ClaimValue == loggedInUserEmail)
-            //                                .Select(x => x.UserId)
-            //                                .SingleOrDefaultAsync();
 
             var recipientId = await _context.UserClaims
                                             .Where(x => x.ClaimType == "email" && x.ClaimValue == dto.Recipient)
