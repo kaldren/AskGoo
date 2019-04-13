@@ -42,7 +42,9 @@ namespace AskGoo.API.Controllers
             var conversationDto = new ConversationDto()
             {
                 Id = conversation.Id,
-                Author = await _context.Users.Where(x => x.Id == conversation.AuthorId).Select(x => x.UserName).FirstOrDefaultAsync(),
+                Author = await _context.Users
+                            .Where(x => x.Id == conversation.AuthorId)
+                            .Select(x => x.UserName).FirstOrDefaultAsync(),
                 Content = conversation.Content,
                 CreatedDate = conversation.CreatedDate
             };
@@ -66,7 +68,10 @@ namespace AskGoo.API.Controllers
                 conversationDto.Add(new ConversationDto
                 {
                     Id = conversation.Id,
-                    Author = await _context.Users.Where(x => x.Id == conversation.AuthorId).Select(x => x.UserName).FirstOrDefaultAsync(),
+                    Author = await _context.Users
+                                .Where(x => x.Id == conversation.AuthorId)
+                                .Select(x => x.UserName)
+                                .FirstOrDefaultAsync(),
                     Content = conversation.Content,
                     CreatedDate = conversation.CreatedDate
                 });

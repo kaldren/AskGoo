@@ -16,6 +16,7 @@ import { OAuthModule } from 'angular-oauth2-oidc';
 import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './pages/signin/signin.component';
 import { MessageDetailComponent } from './pages/message-detail/message-detail.component';
+import { NewMessageComponent } from './pages/messages/new-message/new-message.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MessageDetailComponent } from './pages/message-detail/message-detail.co
     SettingsComponent,
     SigninComponent,
     MessageDetailComponent,
+    NewMessageComponent,
   ],
   imports: [
     BrowserModule,
