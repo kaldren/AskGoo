@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +46,8 @@ import { NewMessageComponent } from './pages/messages/new-message/new-message.co
           sendAccessToken: true
         }
       }
-    )
+    ),
+    FormsModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]

@@ -1,15 +1,19 @@
 <div id="new-message-component">
   <h2>Message</h2>
-  <form>
+  <form (ngSubmit)="onFormSubmit()" #messageForm="ngForm">
     <div class="form-group">
       <label for="messageRecipient">Recipient</label>
-        <input class="form-control" type="text" id="messageRecipient" placeholder="Recipient">
+        <input class="form-control" type="text" id="messageRecipient"
+        placeholder="Recipient" required [(ngModel)]="message.recipient"
+        name="recipient" #recipient="ngModel">
     </div>
     <div class="form-group">
       <label for="messageTextArea">Message</label>
-      <textarea class="form-control" id="messageTextArea" rows="3" placeholder="Enter your message..."></textarea>
+      <textarea class="form-control" id="messageTextArea"
+      rows="3" placeholder="Enter your message..." required
+      [(ngModel)]="message.content" name="content" #content="ngModel"></textarea>
     </div>
-    <button type="button" class="btn btn-success mr-2">Send</button>
+    <button type="submit" class="btn btn-success mr-2" [disabled]="!messageForm.form.valid || formSubmitted">Send</button>
     <button type="button" class="btn btn-warning">Cancel</button>
   </form>
 </div>

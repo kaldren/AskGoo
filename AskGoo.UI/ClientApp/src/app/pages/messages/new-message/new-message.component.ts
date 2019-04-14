@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Message } from 'src/app/components/_models/message';
+import { ConversationsService } from 'src/app/_services/conversations.service';
 
 @Component({
   selector: 'app-new-message',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewMessageComponent implements OnInit {
 
-  constructor() { }
+  message: Message = {
+    recipient: '',
+    content: ''
+  };
+
+  formSubmitted = false;
+
+  constructor(private conversationsService: ConversationsService) { }
 
   ngOnInit() {
   }
 
+  onFormSubmit() {
+    this.formSubmitted = true;
+    console.log(JSON.stringify(this.message));
+    this.conversationsService.createConversation(this.message).subscribe(data => {
+      console.log(data);
+    });
+  }
 }
