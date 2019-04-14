@@ -14,6 +14,6 @@
       [(ngModel)]="message.content" name="content" #content="ngModel"></textarea>
     </div>
     <button type="submit" class="btn btn-success mr-2" [disabled]="!messageForm.form.valid || formSubmitted">Send</button>
-    <button type="button" class="btn btn-warning">Cancel</button>
+    <button type="button" class="btn btn-warning" (click)="messageForm.reset()">Cancel</button>
   </form>
 </div>
